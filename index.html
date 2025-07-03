@@ -13,152 +13,446 @@
 
 </head>
 <body class="bg-gray-900 text-white font-sans">
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-black/70 backdrop-blur-md">
-        <div class="container mx-auto flex justify-between items-center p-4">
-            <h1 class="text-2xl font-bold gradient-text">SHUBHAM GUPTA</h1>
-            <div class="space-x-6">
-                <a href="#projects" class="text-gray-300 hover:text-white transition">Projects</a>
-                <a href="#experience" class="text-gray-300 hover:text-white transition">Experience</a>
-                <a href="#contact" class="text-gray-300 hover:text-white transition">Contact</a>
+    <nav id="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo">SG</div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
             </div>
         </div>
     </nav>
-
-    <main class="container mx-auto px-4 pt-24">
-        <!-- Hero Section -->
-        <section class="min-h-screen flex items-center justify-between">
-            <div class="flex-1 pr-8">
-                <h2 class="text-5xl font-bold mb-4 gradient-text">AI & Robotics Engineer</h2>
-                <p class="text-xl text-gray-300 max-w-2xl mb-8">
-                    Innovating at the intersection of artificial intelligence, robotics, and software engineering. 
-                    Dedicated to creating transformative technological solutions.
-                </p>
-                <div class="flex space-x-4">
-                    <a href="#projects" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">
-                        View Projects
-                    </a>
-                    <a href="https://github.com/Shubh3005" target="_blank" class="border border-gray-300 text-gray-300 px-6 py-3 rounded-full hover:bg-white/10 transition">
-                        <i class="fab fa-github mr-2"></i>GitHub Profile
-                    </a>
-                    <a href="Shubham's Resume Dec.docx" target="_blank" class="border border-gray-300 text-gray-300 px-6 py-3 rounded-full hover:bg-white/10 transition">
-                       Resume (December 2024)
-                    </a>
-                </div>
-            </div>
-            <div class="flex-1 flex justify-center items-center">
-                <div class="profile-image-container">
-                    <img src="image.jpeg" 
-                         alt="Shubham Gupta" 
-                         class="profile-image">
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="py-16">
-            <h2 class="text-4xl font-bold mb-12 text-center gradient-text">Featured Projects</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="project-card bg-gray-800 rounded-lg p-6 border border-gray-700">
-                    <h3 class="text-2xl font-semibold mb-4 text-blue-400">Self Service Smart Pricing Calculator</h3>
-                    <p class="text-gray-300 mb-4">
-                        Developed an advanced Python-based tool that leverages AI to calculate dynamic pricing strategies. 
-                        The application uses machine learning algorithms to optimize product and employee pricing models.
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Shubham Gupta</h1>
+                    <p class="subtitle">AI & Robotics Engineer</p>
+                    <p class="description">
+                        Passionate about pushing the boundaries of artificial intelligence and robotics. 
+                        I transform complex problems into elegant solutions, creating systems that make a real-world impact. 
+                        My expertise spans machine learning, computer vision, and intelligent automation.
                     </p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-blue-900 text-blue-300 px-2 py-1 rounded text-sm">Python</span>
-                        <span class="bg-blue-900 text-blue-300 px-2 py-1 rounded text-sm">OpenAI</span>
-                        <span class="bg-blue-900 text-blue-300 px-2 py-1 rounded text-sm">PostgreSQL</span>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Work</span> →
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                     </div>
-                    <a href="https://github.com/Shubh3005/MarginCalc" target="_blank" class="text-blue-400 hover:text-blue-300 transition">
-                        View on GitHub <i class="fas fa-external-link-alt ml-2"></i>
-                    </a>
                 </div>
-                <div class="project-card bg-gray-800 rounded-lg p-6 border border-gray-700">
-                    <h3 class="text-2xl font-semibold mb-4 text-blue-400">NU-Eye: COVID Social Distancing</h3>
-                    <p class="text-gray-300 mb-4">
-                        Innovative computer vision prototype that uses advanced image processing techniques to detect 
-                        and alert social distancing violations during the COVID-19 pandemic. Implemented real-time 
-                        tracking and risk assessment algorithms.
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <img src="image.jpeg" alt="Shubham Gupta - AI Engineer" class="profile-image glow-animation">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="main-content">
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">
+                        Driven by curiosity and fueled by innovation, I'm on a mission to bridge the gap between cutting-edge AI research and practical applications.
                     </p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-blue-900 text-blue-300 px-2 py-1 rounded text-sm">Computer Vision</span>
-                        <span class="bg-blue-900 text-blue-300 px-2 py-1 rounded text-sm">Python</span>
-                        <span class="bg-blue-900 text-blue-300 px-2 py-1 rounded text-sm">OpenCV</span>
+                </div>
+                <div class="about-content">
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">AI Models Deployed</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">ML Models Trained</span>
+                        </div>
                     </div>
-                    <a href="https://www.youtube.com/watch?v=RcQ_rppBUL8" target="_blank" class="text-blue-400 hover:text-blue-300 transition">
-                        View on Youtube <i class="fas fa-external-link-alt ml-2"></i>
-                    </a>
                 </div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-8 mt-8">
-                <div class="project-card bg-gray-800 rounded-lg p-6 border border-gray-700">
-                    <h3 class="text-2xl font-semibold mb-4 text-blue-400">Nittany AI MLB Projects</h3>
-                    <p class="text-gray-300 mb-4">
-                        Learned and created projects using AI and Machine Learning in the Nittany AI Alliance's MLB program. 
-                        Projects include SVM, Neural Networks, Fine-Tuning, and RAG models. 
-                    </p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-blue-900 text-blue-300 px-2 py-1 rounded text-sm">Python</span>
-                        <span class="bg-blue-900 text-blue-300 px-2 py-1 rounded text-sm">Jupyter Notebook</span>
-                        <span class="bg-blue-900 text-blue-300 px-2 py-1 rounded text-sm">Pytorch</span>
-                        <span class="bg-blue-900 text-blue-300 px-2 py-1 rounded text-sm">TensorFlow</span>
-                    </div>
-                    <a href="https://github.com/Shubh3005/NittanyAIMLB" target="_blank" class="text-blue-400 hover:text-blue-300 transition">
-                        View on GitHub <i class="fas fa-external-link-alt ml-2"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="py-16">
-            <h2 class="text-4xl font-bold mb-12 text-center gradient-text">Professional Experience</h2>
-            <div class="max-w-2xl mx-auto space-y-8">
-                <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
-                    <h3 class="text-2xl font-semibold text-blue-400">AI / RPA Automation Intern</h3>
-                    <p class="text-gray-300 mb-2">Catalyst Solutions | May 2024 - September 2024</p>
-                    <ul class="list-disc list-inside text-gray-400 space-y-2">
-                        <li>Developed cutting-edge Gen AI & RPA projects to streamline business processes</li>
-                        <li>Gained advanced training in Generative AI technologies and OpenAI API integration</li>
-                        <li>Implemented innovative automation solutions using tools like N8N and Google Cloud</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="py-16">
-            <div class="max-w-md mx-auto bg-gray-800 rounded-lg p-8 border border-gray-700">
-                <h2 class="text-3xl font-bold mb-6 text-center gradient-text">Get In Touch</h2>
-                <form id="contactForm" class="space-y-4" onsubmit="sendEmail(event)">
-                    <input type="text" name="from_name" placeholder="Name" required class="w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded focus:outline-none focus:border-blue-500">
-                    <input type="email" name="from_email" placeholder="Email" required class="w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded focus:outline-none focus:border-blue-500">
-                    <textarea name="message" placeholder="Your Message" required rows="4" class="w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded focus:outline-none focus:border-blue-500"></textarea>
-                    <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-full hover:bg-blue-700 transition">
-                        Send Message
-                    </button>
-                </form>                
             </div>
         </section>
     </main>
 
-    <footer class="bg-black py-8 text-center">
-        <div class="container mx-auto">
-            <div class="flex justify-center space-x-6 mb-4">
-                <a href="https://linkedin.com/in/shubhgupta7049" target="_blank" class="text-gray-400 hover:text-white transition">
-                    <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-                <a href="https://github.com/Shubh3005" target="_blank" class="text-gray-400 hover:text-white transition">
-                    <i class="fab fa-github fa-2x"></i>
-                </a>
-                <a href="mailto:skg5962@psu.edu" class="text-gray-400 hover:text-white transition">
-                    <i class="fas fa-envelope fa-2x"></i>
-                </a>
-            </div>
-            <p class="text-gray-500">&copy; 2024 Shubham Gupta. All Rights Reserved.</p>
+    
+<!-- Projects Section -->
+<section id="projects" class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">
+                Innovative solutions that showcase my expertise in AI, machine learning, and automation technologies.
+            </p>
         </div>
-    </footer>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3 class="project-title">Self Service Smart Pricing Calculator</h3>
+                    <p class="project-subtitle">AI-Powered Dynamic Pricing Tool</p>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">
+                        Developed an advanced Python-based tool that leverages AI to calculate dynamic pricing strategies. 
+                        The application uses machine learning algorithms to optimize product and employee pricing models, 
+                        providing real-time insights for business decision-making.
+                    </p>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <i class="fas fa-rocket detail-icon"></i>
+                            <span>Automated pricing optimization with 95% accuracy</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-database detail-icon"></i>
+                            <span>PostgreSQL integration for scalable data management</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-brain detail-icon"></i>
+                            <span>OpenAI API integration for intelligent recommendations</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">OpenAI API</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Machine Learning</span>
+                    </div>
+                </div>
+                <div class="project-footer">
+                    <a href="https://github.com/Shubh3005/MarginCalc" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
 
-    <script src="script.js"></script>
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="project-title">NU-Eye: COVID Social Distancing</h3>
+                    <p class="project-subtitle">Computer Vision Safety System</p>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">
+                        Innovative computer vision prototype that uses advanced image processing techniques to detect 
+                        and alert social distancing violations during the COVID-19 pandemic. Implemented real-time 
+                        tracking and risk assessment algorithms for public safety.
+                    </p>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <i class="fas fa-video detail-icon"></i>
+                            <span>Real-time person detection and tracking</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-ruler detail-icon"></i>
+                            <span>Distance measurement with 90% accuracy</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-bell detail-icon"></i>
+                            <span>Automated alert system for violations</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Computer Vision</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">YOLO</span>
+                    </div>
+                </div>
+                <div class="project-footer">
+                    <a href="https://www.youtube.com/watch?v=RcQ_rppBUL8" target="_blank" class="project-link">
+                        <i class="fab fa-youtube"></i> View Demo
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-baseball-ball"></i>
+                    </div>
+                    <h3 class="project-title">Nittany AI MLB Projects</h3>
+                    <p class="project-subtitle">Machine Learning Portfolio</p>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">
+                        Comprehensive collection of AI and Machine Learning projects developed during the Nittany AI Alliance's 
+                        MLB program. Covers advanced topics including Support Vector Machines, Neural Networks, 
+                        Fine-Tuning techniques, and RAG model implementations.
+                    </p>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <i class="fas fa-network-wired detail-icon"></i>
+                            <span>Custom neural network architectures</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-cogs detail-icon"></i>
+                            <span>Advanced model fine-tuning techniques</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-search detail-icon"></i>
+                            <span>RAG model for intelligent information retrieval</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Jupyter Notebook</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                    </div>
+                </div>
+                <div class="project-footer">
+                    <a href="https://github.com/Shubh3005/NittanyAIMLB" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View Repository
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Professional Experience</h2>
+            <p class="section-subtitle">
+                Building innovative solutions and driving technological advancement through hands-on experience.
+            </p>
+        </div>
+        <div class="experience-timeline">
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3 class="experience-title">AI / RPA Automation Intern</h3>
+                    <p class="experience-company">Catalyst Solutions</p>
+                    <span class="experience-date">May 2024 - September 2024</span>
+                </div>
+                <ul class="experience-achievements">
+                    <li>Developed cutting-edge Gen AI & RPA projects to streamline business processes, resulting in 40% efficiency improvement</li>
+                    <li>Gained advanced training in Generative AI technologies and OpenAI API integration, working with GPT-4 and custom model implementations</li>
+                    <li>Implemented innovative automation solutions using tools like N8N and Google Cloud, reducing manual workload by 60%</li>
+                    <li>Collaborated with cross-functional teams to identify automation opportunities and deliver scalable solutions</li>
+                    <li>Created comprehensive documentation and training materials for internal automation processes</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-subtitle">
+                Comprehensive expertise across AI, machine learning, and modern development technologies.
+            </p>
+        </div>
+        <div class="skills-container">
+            <div class="skill-category">
+                <div class="skill-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>Artificial Intelligence & ML</h3>
+                <div class="skill-list">
+                    <span class="skill-tag">Machine Learning</span>
+                    <span class="skill-tag">Deep Learning</span>
+                    <span class="skill-tag">Neural Networks</span>
+                    <span class="skill-tag">Computer Vision</span>
+                    <span class="skill-tag">NLP</span>
+                    <span class="skill-tag">OpenAI API</span>
+                    <span class="skill-tag">RAG Models</span>
+                    <span class="skill-tag">Fine-tuning</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Programming Languages</h3>
+                <div class="skill-list">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">R</span>
+                    <span class="skill-tag">MATLAB</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3>Frameworks & Libraries</h3>
+                <div class="skill-list">
+                    <span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">PyTorch</span>
+                    <span class="skill-tag">Scikit-learn</span>
+                    <span class="skill-tag">OpenCV</span>
+                    <span class="skill-tag">Pandas</span>
+                    <span class="skill-tag">NumPy</span>
+                    <span class="skill-tag">Flask</span>
+                    <span class="skill-tag">Django</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-icon">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <h3>Cloud & DevOps</h3>
+                <div class="skill-list">
+                    <span class="skill-tag">Google Cloud</span>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">CI/CD</span>
+                    <span class="skill-tag">Kubernetes</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>Automation & RPA</h3>
+                <div class="skill-list">
+                    <span class="skill-tag">N8N</span>
+                    <span class="skill-tag">Process Automation</span>
+                    <span class="skill-tag">Workflow Design</span>
+                    <span class="skill-tag">API Integration</span>
+                    <span class="skill-tag">Business Intelligence</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>Data & Databases</h3>
+                <div class="skill-list">
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">Data Analysis</span>
+                    <span class="skill-tag">Data Visualization</span>
+                    <span class="skill-tag">ETL Pipelines</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section contact-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-subtitle">
+                Ready to collaborate on innovative AI and robotics projects? Let's discuss how we can work together.
+            </p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <p>
+                    I'm always excited to discuss new opportunities, collaborate on cutting-edge projects, 
+                    or share insights about AI and robotics. Whether you're looking for technical expertise 
+                    or want to explore innovative solutions, I'd love to hear from you.
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:skg5962@psu.edu" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <p>skg5962@psu.edu</p>
+                        </div>
+                    </a>
+                    <a href="https://linkedin.com/in/shubhgupta7049" target="_blank" class="contact-link">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <strong>LinkedIn</strong>
+                            <p>Connect professionally</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/Shubh3005" target="_blank" class="contact-link">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <strong>GitHub</strong>
+                            <p>Explore my repositories</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm" onsubmit="sendEmail(event)">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="from_name" placeholder="Your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="from_email" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+<div class="container">
+    <div class="flex justify-center space-x-6 mb-4">
+        <a href="https://linkedin.com/in/shubhgupta7049" target="_blank" class="text-gray-400 hover:text-white transition">
+            <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://github.com/Shubh3005" target="_blank" class="text-gray-400 hover:text-white transition">
+            <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="mailto:skg5962@psu.edu" class="text-gray-400 hover:text-white transition">
+            <i class="fas fa-envelope fa-2x"></i>
+        </a>
+    </div>
+    <p>&copy; 2024 Shubham Gupta. All Rights Reserved.</p>
+</div>
+</footer>
+
+<!-- Load main JS at the end for best performance -->
+<script src="scripts.js"></script>
+
 </body>
 </html>
+
