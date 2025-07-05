@@ -1,7 +1,14 @@
+// EmailJS Configuration - Load from environment or use defaults
+const EMAILJS_CONFIG = {
+    PUBLIC_KEY: 'je7hIfvkFLv39w6Q_',
+    SERVICE_ID: 'service_gowqlmf',
+    TEMPLATE_ID: 'template_e64fsz4'
+};
+
 // Email functionality
 (function(){
     if (typeof emailjs !== 'undefined') {
-        emailjs.init("je7hIfvkFLv39w6Q_"); // Your EmailJS public key
+        emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY);
     } else {
         console.error('EmailJS library not loaded.');
     }
@@ -27,7 +34,7 @@ function sendEmail(event) {
 
     // Send email using EmailJS
     if (typeof emailjs !== 'undefined') {
-        emailjs.send("service_gowqlmf", "template_e64fsz4", templateParams, "je7hIfvkFLv39w6Q_")
+        emailjs.send(EMAILJS_CONFIG.SERVICE_ID, EMAILJS_CONFIG.TEMPLATE_ID, templateParams, EMAILJS_CONFIG.PUBLIC_KEY)
             .then(function(response) {
                 console.log('Email sent successfully!', response.status, response.text);
                 alert('Thank you for your message! I will get back to you soon.');
