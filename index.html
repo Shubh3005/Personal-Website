@@ -33,6 +33,17 @@
                     <li><a href="skills.html" class="nav-link">~/skills</a></li>
                     <li><a href="contact.html" class="nav-link">~/contact</a></li>
                 </ul>
+                <div class="nav-social">
+                    <a href="https://linkedin.com/in/shubhgupta7049" target="_blank" class="nav-social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Shubh3005" target="_blank" class="nav-social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:skg5962@psu.edu" class="nav-social-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
                     <span class="menu-icon"></span>
                 </button>
@@ -54,36 +65,54 @@
                         <span class="prompt">$</span> <span class="command">whoami</span>
                     </p>
                     <h1 class="glitch" data-text="Shubham Gupta">Shubham Gupta</h1>
+                    <p class="hero-education">
+                        <span class="education-main">Computer Science @ Penn State</span>
+                        <span class="education-divider">|</span>
+                        <span class="education-honors">Schreyer Honors College</span>
+                        <span class="education-divider">|</span>
+                        <span class="education-grad">Dec 2026</span>
+                    </p>
                     <p class="tagline">Engineering the Infrastructure for Responsible AI.</p>
-                    <p class="subtitle">Systems Thinker</p>
+                    <p class="subtitle">AI Systems Research | Seeking SWE Internships</p>
                     <p class="description">
                         I don't just train models—I build the plumbing that makes them viable: 
                         infrastructure, cost-efficiency, and reliability at scale.
                     </p>
+                    <p class="availability-badge">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>Available: Summer 2026 Internships</span>
+                    </p>
                     <div class="hero-cta">
-                        <a href="projects.html" class="btn btn-primary">
-                            <span class="btn-icon">▶</span>
-                            <span>View Systems</span>
+                        <a href="resume.pdf" class="btn btn-primary" target="_blank">
+                            <span class="btn-icon"><i class="fas fa-download"></i></span>
+                            <span>Download Resume</span>
                         </a>
-                        <a href="contact.html" class="btn btn-secondary">
+                        <a href="projects.html" class="btn btn-secondary">
+                            <span class="btn-icon">▶</span>
+                            <span>View Projects</span>
+                        </a>
+                        <a href="contact.html" class="btn btn-tertiary">
                             <span class="btn-icon">◈</span>
-                            <span>Initialize Contact</span>
+                            <span>Contact</span>
                         </a>
                     </div>
                     <div class="hero-stats">
-                        <div class="stat-item">
+                        <div class="stat-item" title="Distributed JBOD storage system with custom socket protocols">
                             <span class="stat-value">10x</span>
                             <span class="stat-label">Throughput Gains</span>
+                            <span class="stat-context">Distributed Storage</span>
                         </div>
                         <div class="stat-divider"></div>
-                        <div class="stat-item">
+                        <div class="stat-item" title="AWP model preference prediction accuracy in XAI research">
                             <span class="stat-value">84%</span>
-                            <span class="stat-label">XAI Accuracy</span>
+                            <span class="stat-label">Preference Prediction</span>
+                            <span class="stat-context">XAI Research</span>
                         </div>
                         <div class="stat-divider"></div>
-                        <div class="stat-item">
+                        <div class="stat-item" title="Prompt Optima - LLM prompt compression middleware">
                             <span class="stat-value">60-95%</span>
                             <span class="stat-label">Token Reduction</span>
+                            <span class="stat-context">LLM Optimization</span>
                         </div>
                     </div>
                 </div>
@@ -171,25 +200,46 @@
                 <div class="featured-project">
                     <div class="featured-content">
                         <div class="project-signal responsibility">
-                            <span class="signal-label">PENN STATE RESEARCH</span>
+                            <span class="signal-label">UNDERGRADUATE RESEARCH</span>
                         </div>
-                        <h3 class="project-title">Explainable AI Research</h3>
+                        <h3 class="project-title">Preference-Aligned Counterfactual Explanations</h3>
                         <p class="project-oneliner">Closing the gap between mathematical optimality and human feasibility.</p>
+                        
+                        <div class="research-meta">
+                            <p class="research-advisor">
+                                <i class="fas fa-user-graduate"></i>
+                                <span>Penn State College of Engineering</span>
+                            </p>
+                            <p class="research-status">
+                                <i class="fas fa-file-alt"></i>
+                                <span>Manuscript in preparation | Target: Early 2026</span>
+                            </p>
+                        </div>
+                        
                         <p class="project-description">
                             Validating the Acceptability & Weighted Proximity (AWP) model to improve algorithmic 
                             recourse beyond standard proximity-based Counterfactual Explanations. Engineering evaluation 
                             pipelines to model user-specific acceptability thresholds and align feature-change costs 
-                            with human feasibility constraints. Manuscript targeting early 2026 submission.
+                            with human feasibility constraints.
                         </p>
+                        
+                        <div class="research-finding">
+                            <span class="finding-label">Key Finding:</span>
+                            <span class="finding-value">84% accuracy in predicting human preferences for recourse actions</span>
+                        </div>
+                        
                         <div class="tech-stack">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Counterfactual Explanations</span>
                             <span class="tech-tag">Algorithmic Recourse</span>
                         </div>
-                        <a href="projects.html" class="btn btn-primary">
-                            <span>View All Projects</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
+                        <div class="research-cta">
+                            <a href="projects.html" class="btn btn-primary">
+                                <span>View All Projects</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
                     <div class="featured-visual">
                         <div class="code-window">
