@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Shubham Gupta</title>
+    <meta name="description" content="Learn about Shubham Gupta - Systems Engineer, AI Infrastructure Builder, and Penn State Honors Student.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <canvas id="matrix-bg"></canvas>
+    
+    <nav id="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <span class="logo-bracket">[</span>
+                    <span class="logo-text">SG</span>
+                    <span class="logo-bracket">]</span>
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="nav-link">~/home</a></li>
+                    <li><a href="about.html" class="nav-link active">~/about</a></li>
+                    <li><a href="projects.html" class="nav-link">~/projects</a></li>
+                    <li><a href="skills.html" class="nav-link">~/skills</a></li>
+                    <li><a href="contact.html" class="nav-link">~/contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="menu-icon"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content page-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html">~</a> / <span>about</span>
+                </div>
+                <h1 class="page-title">System.init()</h1>
+                <p class="page-subtitle">The story behind the systems thinker.</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section">
+            <div class="container">
+                <div class="about-page-content">
+                    <div class="about-main">
+                        <div class="about-image-container">
+                            <img src="image/image.jpeg" alt="Shubham Gupta" class="about-page-image">
+                            <div class="image-decoration"></div>
+                        </div>
+                        <div class="about-bio">
+                            <div class="code-block large">
+                                <div class="code-header">
+                                    <span class="code-file">about.md</span>
+                                    <span class="code-lang">markdown</span>
+                                </div>
+                                <div class="code-content">
+                                    <p class="about-text">
+                                        My interest in engineering started with <span class="highlight-cyan">robotics</span>—moving atoms. 
+                                        It evolved into <span class="highlight-cyan">software</span>—moving decisions. Today, I focus on the 
+                                        <span class="highlight-blue">'plumbing'</span> that makes AI viable: the infrastructure, cost-efficiency, 
+                                        and interpretability that allow powerful models to function in the real world.
+                                    </p>
+                                    <p class="about-text">
+                                        Whether I am architecting a <span class="highlight-cyan">distributed storage system in C</span> or evaluating 
+                                        <span class="highlight-blue">fairness constraints in ML models</span>, my goal is the same: to build systems 
+                                        that are not just fast, but <span class="emphasis">reliable</span>, <span class="emphasis">transparent</span>, 
+                                        and <span class="emphasis">trustworthy</span>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Philosophy Section -->
+                    <div class="philosophy-section">
+                        <h2 class="section-title-sm">Engineering Philosophy</h2>
+                        <div class="philosophy-grid-large">
+                            <div class="philosophy-item large">
+                                <div class="philosophy-icon">
+                                    <i class="fas fa-cubes"></i>
+                                </div>
+                                <h4>Systems First</h4>
+                                <p>Understanding the whole before optimizing the parts. Every component exists within a larger context, and true optimization requires seeing the full picture.</p>
+                            </div>
+                            <div class="philosophy-item large">
+                                <div class="philosophy-icon">
+                                    <i class="fas fa-balance-scale"></i>
+                                </div>
+                                <h4>Responsible AI</h4>
+                                <p>Building AI that's interpretable and fair by design. The most powerful model is worthless if users can't trust or understand its decisions.</p>
+                            </div>
+                            <div class="philosophy-item large">
+                                <div class="philosophy-icon">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                </div>
+                                <h4>Efficiency Obsessed</h4>
+                                <p>Performance is a feature, not an afterthought. From token optimization to system throughput, every millisecond and every byte matters at scale.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education Section -->
+                    <div class="education-section">
+                        <h2 class="section-title-sm">Education</h2>
+                        <div class="education-card large">
+                            <div class="education-logo">
+                                <div class="university-emblem">
+                                    <span class="emblem-text">PSU</span>
+                                </div>
+                            </div>
+                            <div class="education-details">
+                                <h3 class="university-name">Penn State University</h3>
+                                <p class="honors-program">Schreyer Honors College</p>
+                                <div class="degree-info">
+                                    <p class="degree">B.S. Computer Science</p>
+                                    <p class="minor">Minor in AI Engineering</p>
+                                </div>
+                                <div class="education-stats">
+                                    <div class="edu-stat">
+                                        <span class="edu-stat-value">Dec 2026</span>
+                                        <span class="edu-stat-label">Expected Graduation</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="education-decoration">
+                                <div class="circuit-pattern"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Current Focus -->
+                    <div class="current-focus">
+                        <h2 class="section-title-sm">Current Focus</h2>
+                        <div class="focus-grid">
+                            <div class="focus-item">
+                                <div class="focus-icon">
+                                    <i class="fas fa-flask"></i>
+                                </div>
+                                <div class="focus-content">
+                                    <h4>Explainable AI Research</h4>
+                                    <p>Validating the AWP model for algorithmic recourse at Penn State College of Engineering. Targeting publication in early 2026.</p>
+                                </div>
+                            </div>
+                            <div class="focus-item">
+                                <div class="focus-icon">
+                                    <i class="fas fa-compress-arrows-alt"></i>
+                                </div>
+                                <div class="focus-content">
+                                    <h4>LLM Cost Optimization</h4>
+                                    <p>Continuing development on Prompt Optima, exploring semantic compression techniques for production AI systems.</p>
+                                </div>
+                            </div>
+                            <div class="focus-item">
+                                <div class="focus-icon">
+                                    <i class="fas fa-server"></i>
+                                </div>
+                                <div class="focus-content">
+                                    <h4>Distributed Systems</h4>
+                                    <p>Deep diving into systems programming, focusing on high-concurrency architectures and data integrity patterns.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="index.html" class="footer-logo">
+                    <span class="logo-bracket">[</span>
+                    <span class="logo-text">SG</span>
+                    <span class="logo-bracket">]</span>
+                </a>
+                <div class="footer-links">
+                    <a href="https://linkedin.com/in/shubhgupta7049" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Shubh3005" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:skg5962@psu.edu">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <p class="footer-text">
+                    <span class="code-comment">// Built with systems thinking</span>
+                </p>
+                <p class="copyright">&copy; 2024 Shubham Gupta. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

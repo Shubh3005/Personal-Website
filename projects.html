@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Shubham Gupta</title>
+    <meta name="description" content="Featured projects in AI infrastructure, systems engineering, and full-stack development by Shubham Gupta.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <canvas id="matrix-bg"></canvas>
+    
+    <nav id="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <span class="logo-bracket">[</span>
+                    <span class="logo-text">SG</span>
+                    <span class="logo-bracket">]</span>
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="nav-link">~/home</a></li>
+                    <li><a href="about.html" class="nav-link">~/about</a></li>
+                    <li><a href="projects.html" class="nav-link active">~/projects</a></li>
+                    <li><a href="skills.html" class="nav-link">~/skills</a></li>
+                    <li><a href="contact.html" class="nav-link">~/contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="menu-icon"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content page-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html">~</a> / <span>projects</span>
+                </div>
+                <h1 class="page-title">Projects.deploy()</h1>
+                <p class="page-subtitle">The trifecta: Efficiency, Responsibility, and Hard Engineering.</p>
+            </div>
+        </section>
+
+        <!-- Projects Filter -->
+        <section class="section projects-page">
+            <div class="container">
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="featured">Featured</button>
+                    <button class="filter-btn" data-filter="ai">AI/ML</button>
+                    <button class="filter-btn" data-filter="systems">Systems</button>
+                    <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                </div>
+
+                <div class="projects-showcase">
+                    <!-- Project A: Efficiency Signal -->
+                    <div class="project-card featured" data-category="featured ai">
+                        <div class="project-signal efficiency">
+                            <span class="signal-label">THE EFFICIENCY SIGNAL</span>
+                        </div>
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-compress-arrows-alt"></i>
+                            </div>
+                            <div class="project-meta">
+                                <span class="project-role">Core Developer</span>
+                                <span class="project-event">HackHarvard 2024</span>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Prompt Optima</h3>
+                        <p class="project-oneliner">Reframing AI performance as a cost problem.</p>
+                        <p class="project-description">
+                            A middleware platform that intelligently compresses LLM prompts by removing 
+                            low-entropy tokens while preserving semantic intent. Real-time cost quantification 
+                            using Gemini API benchmarks.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">60-95%</span>
+                                <span class="metric-label">Token Reduction</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Real-time</span>
+                                <span class="metric-label">Cost Savings</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Gemini API</span>
+                            <span class="tech-tag">Semantic Analysis</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Rushil1234/PromptOptima" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Source
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project B: Responsibility Signal -->
+                    <div class="project-card featured" data-category="featured ai">
+                        <div class="project-signal responsibility">
+                            <span class="signal-label">THE RESPONSIBILITY SIGNAL</span>
+                        </div>
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="project-meta">
+                                <span class="project-role">Undergraduate Research Assistant</span>
+                                <span class="project-institution">Penn State College of Engineering</span>
+                                <span class="project-date">Oct 2025 – Present</span>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Explainable AI Research</h3>
+                        <p class="project-oneliner">Improving algorithmic recourse beyond standard proximity-based CFEs.</p>
+                        <p class="project-description">
+                            Validating the Acceptability & Weighted Proximity (AWP) model to improve algorithmic 
+                            recourse beyond standard proximity-based Counterfactual Explanations. Engineered evaluation 
+                            pipelines modeling user-specific acceptability thresholds and analyzed classifier decision 
+                            boundaries to align feature-change costs with human feasibility constraints. Manuscript 
+                            in preparation targeting early 2026 submission.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">84%</span>
+                                <span class="metric-label">Preference Prediction Accuracy</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">2026</span>
+                                <span class="metric-label">Target Publication</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Counterfactual Explanations</span>
+                            <span class="tech-tag">Algorithmic Recourse</span>
+                        </div>
+                    </div>
+
+                    <!-- Project C: Hard Engineering Signal -->
+                    <div class="project-card featured" data-category="featured systems">
+                        <div class="project-signal engineering">
+                            <span class="signal-label">THE HARD ENGINEERING SIGNAL</span>
+                        </div>
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="project-meta">
+                                <span class="project-role">Systems Architect</span>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Distributed JBOD System</h3>
+                        <p class="project-oneliner">High-concurrency storage built from scratch.</p>
+                        <p class="project-description">
+                            Architected a distributed storage system supporting network-mounted volumes 
+                            with strict data integrity. Custom socket protocols and mutex synchronization 
+                            for maximum throughput.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">10x</span>
+                                <span class="metric-label">Throughput vs Baseline</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Strict</span>
+                                <span class="metric-label">Data Integrity</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">C</span>
+                            <span class="tech-tag">Pthreads</span>
+                            <span class="tech-tag">Sockets</span>
+                            <span class="tech-tag">Linux/Unix</span>
+                        </div>
+                    </div>
+
+                    <!-- Project D: AI Infrastructure Signal -->
+                    <div class="project-card featured" data-category="featured ai fullstack">
+                        <div class="project-signal infrastructure">
+                            <span class="signal-label">THE AI INFRASTRUCTURE SIGNAL</span>
+                        </div>
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <div class="project-meta">
+                                <span class="project-role">Full Stack Developer</span>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Healthcare Claims Adjudication</h3>
+                        <p class="project-oneliner">Hybrid rules-engine + LLM system for claims processing.</p>
+                        <p class="project-description">
+                            A production-ready healthcare claims adjudication system combining deterministic rules 
+                            with LLM-based reasoning for ambiguous cases. Features RAG-powered retrieval from 
+                            historical claims, human-in-the-loop review UI, and comprehensive audit logging 
+                            with decision explanations.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">Hybrid</span>
+                                <span class="metric-label">Rules + LLM Architecture</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">RAG</span>
+                                <span class="metric-label">Vector DB Integration</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">ChromaDB</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Shubh3005/HealthcareAgent" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Source
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project E: Urban Analytics -->
+                    <div class="project-card" data-category="fullstack ai">
+                        <div class="project-signal data-viz">
+                            <span class="signal-label">THE DATA VISUALIZATION SIGNAL</span>
+                        </div>
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <div class="project-meta">
+                                <span class="project-role">Full Stack Developer</span>
+                            </div>
+                        </div>
+                        <h3 class="project-title">SF Urban Analytics Platform</h3>
+                        <p class="project-oneliner">AI-powered civic data visualization and insights.</p>
+                        <p class="project-description">
+                            Interactive mapping application for visualizing urban data with AI-powered insights 
+                            and report generation. Features multi-layer data visualization (crime, SF311 requests), 
+                            neighborhood analytics, and automated PDF report generation for civic engagement.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">Multi-layer</span>
+                                <span class="metric-label">Data Visualization</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Real-time</span>
+                                <span class="metric-label">API Integration</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Deck.gl</span>
+                            <span class="tech-tag">MapLibre</span>
+                            <span class="tech-tag">Tailwind</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Shubh3005/sf-map-project" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Source
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project F: SkinIQ -->
+                    <div class="project-card" data-category="ai fullstack">
+                        <div class="project-signal ml-app">
+                            <span class="signal-label">THE ML APPLICATION SIGNAL</span>
+                        </div>
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-magic"></i>
+                            </div>
+                            <div class="project-meta">
+                                <span class="project-role">Developer</span>
+                                <span class="project-award"><i class="fas fa-trophy"></i> Hackathon Project</span>
+                            </div>
+                        </div>
+                        <h3 class="project-title">SkinIQ</h3>
+                        <p class="project-oneliner">AI-powered skincare analysis and recommendations.</p>
+                        <p class="project-description">
+                            Cross-platform mobile application that uses ML-based image classification 
+                            to detect skin types via camera and provide personalized skincare routines. 
+                            Features real-time analysis, Supabase backend integration, and iOS deployment via Capacitor.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">Real-time</span>
+                                <span class="metric-label">Image Classification</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Cross-platform</span>
+                                <span class="metric-label">iOS + Web</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Capacitor</span>
+                            <span class="tech-tag">Supabase</span>
+                            <span class="tech-tag">ML/CV</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Shubh3005/SkinIQ" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Source
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project G: Nittany AI MLB -->
+                    <div class="project-card" data-category="ai">
+                        <div class="project-signal learning">
+                            <span class="signal-label">THE DEEP LEARNING SIGNAL</span>
+                        </div>
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="project-meta">
+                                <span class="project-role">ML Engineer</span>
+                                <span class="project-institution">Nittany AI Alliance</span>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Nittany AI ML Portfolio</h3>
+                        <p class="project-oneliner">Comprehensive ML/AI technique implementations.</p>
+                        <p class="project-description">
+                            Collection of advanced AI and Machine Learning implementations including 
+                            Neural Networks from scratch, Fine-Tuning techniques, and RAG model 
+                            implementations (with and without OpenAI dependencies) developed during 
+                            the Nittany AI Alliance's Machine Learning Bootcamp.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">Neural Nets</span>
+                                <span class="metric-label">From Scratch</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">RAG</span>
+                                <span class="metric-label">Implementation</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Jupyter</span>
+                            <span class="tech-tag">Fine-tuning</span>
+                            <span class="tech-tag">RAG</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Shubh3005/NittanyAIMLB" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Source
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project H: AI Secretary Agent -->
+                    <div class="project-card" data-category="ai">
+                        <div class="project-signal automation">
+                            <span class="signal-label">THE AUTOMATION SIGNAL</span>
+                        </div>
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="project-meta">
+                                <span class="project-role">Developer</span>
+                            </div>
+                        </div>
+                        <h3 class="project-title">AI Secretary Agent</h3>
+                        <p class="project-oneliner">Multi-service AI assistant with tool integrations.</p>
+                        <p class="project-description">
+                            Autonomous AI agent that integrates with Gmail, Google Calendar, and Notion 
+                            to automate personal productivity workflows. Features modular architecture 
+                            for easy extension with additional service integrations.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">3+</span>
+                                <span class="metric-label">Service Integrations</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Modular</span>
+                                <span class="metric-label">Architecture</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Gmail API</span>
+                            <span class="tech-tag">Calendar API</span>
+                            <span class="tech-tag">Notion API</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Shubh3005/ai-secretary-agent" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Source
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project I: Smart Pricing Calculator -->
+                    <div class="project-card" data-category="ai fullstack">
+                        <div class="project-signal business">
+                            <span class="signal-label">THE BUSINESS AUTOMATION SIGNAL</span>
+                        </div>
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-calculator"></i>
+                            </div>
+                            <div class="project-meta">
+                                <span class="project-role">Developer</span>
+                                <span class="project-stars"><i class="fas fa-star"></i> 1 Star</span>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Self-Service Pricing Calculator</h3>
+                        <p class="project-oneliner">AI-powered dynamic pricing optimization.</p>
+                        <p class="project-description">
+                            Python-based pricing tool that leverages AI to calculate dynamic pricing 
+                            strategies. Uses machine learning algorithms to optimize product and employee 
+                            pricing models, providing real-time insights for business decision-making.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">Dynamic</span>
+                                <span class="metric-label">Pricing Models</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">AI-Powered</span>
+                                <span class="metric-label">Optimization</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenAI API</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Shubh3005/MarginCalc" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Source
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GitHub CTA -->
+                <div class="github-cta">
+                    <p>Want to see more?</p>
+                    <a href="https://github.com/Shubh3005" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-github"></i>
+                        <span>View All Repositories</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="index.html" class="footer-logo">
+                    <span class="logo-bracket">[</span>
+                    <span class="logo-text">SG</span>
+                    <span class="logo-bracket">]</span>
+                </a>
+                <div class="footer-links">
+                    <a href="https://linkedin.com/in/shubhgupta7049" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Shubh3005" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:skg5962@psu.edu">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <p class="footer-text">
+                    <span class="code-comment">// Built with systems thinking</span>
+                </p>
+                <p class="copyright">&copy; 2024 Shubham Gupta. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

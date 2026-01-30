@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Shubham Gupta</title>
+    <meta name="description" content="Get in touch with Shubham Gupta - Systems Engineer, AI Infrastructure Builder.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <canvas id="matrix-bg"></canvas>
+    
+    <nav id="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <span class="logo-bracket">[</span>
+                    <span class="logo-text">SG</span>
+                    <span class="logo-bracket">]</span>
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="nav-link">~/home</a></li>
+                    <li><a href="about.html" class="nav-link">~/about</a></li>
+                    <li><a href="projects.html" class="nav-link">~/projects</a></li>
+                    <li><a href="skills.html" class="nav-link">~/skills</a></li>
+                    <li><a href="contact.html" class="nav-link active">~/contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="menu-icon"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content page-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html">~</a> / <span>contact</span>
+                </div>
+                <h1 class="page-title">Contact.establish()</h1>
+                <p class="page-subtitle">Let's discuss systems, AI infrastructure, or your next technical challenge.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-page">
+            <div class="container">
+                <div class="contact-content large">
+                    <div class="contact-info large">
+                        <div class="terminal-window large">
+                            <div class="terminal-header">
+                                <span class="terminal-dot red"></span>
+                                <span class="terminal-dot yellow"></span>
+                                <span class="terminal-dot green"></span>
+                                <span class="terminal-title">contact@shubham:~</span>
+                            </div>
+                            <div class="terminal-body">
+                                <p class="terminal-line">
+                                    <span class="prompt">$</span> cat ./contact_info.json
+                                </p>
+                                <div class="json-output">
+                                    <p>{</p>
+                                    <p>  <span class="json-key">"name"</span>: <span class="json-value">"Shubham Gupta"</span>,</p>
+                                    <p>  <span class="json-key">"role"</span>: <span class="json-value">"Systems Engineer"</span>,</p>
+                                    <p>  <span class="json-key">"email"</span>: <span class="json-value">"skg5962@psu.edu"</span>,</p>
+                                    <p>  <span class="json-key">"linkedin"</span>: <span class="json-value">"shubhgupta7049"</span>,</p>
+                                    <p>  <span class="json-key">"github"</span>: <span class="json-value">"Shubh3005"</span>,</p>
+                                    <p>  <span class="json-key">"location"</span>: <span class="json-value">"State College, PA"</span>,</p>
+                                    <p>  <span class="json-key">"status"</span>: <span class="json-value">"open_to_opportunities"</span></p>
+                                    <p>}</p>
+                                </div>
+                                <p class="terminal-line">
+                                    <span class="prompt">$</span> <span class="cursor-blink">_</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-cards">
+                            <a href="mailto:skg5962@psu.edu" class="contact-card">
+                                <div class="contact-card-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-card-content">
+                                    <h4>Email</h4>
+                                    <p>skg5962@psu.edu</p>
+                                    <span class="contact-card-action">Send an email <i class="fas fa-arrow-right"></i></span>
+                                </div>
+                            </a>
+                            <a href="https://linkedin.com/in/shubhgupta7049" target="_blank" class="contact-card">
+                                <div class="contact-card-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div class="contact-card-content">
+                                    <h4>LinkedIn</h4>
+                                    <p>shubhgupta7049</p>
+                                    <span class="contact-card-action">Connect <i class="fas fa-arrow-right"></i></span>
+                                </div>
+                            </a>
+                            <a href="https://github.com/Shubh3005" target="_blank" class="contact-card">
+                                <div class="contact-card-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="contact-card-content">
+                                    <h4>GitHub</h4>
+                                    <p>Shubh3005</p>
+                                    <span class="contact-card-action">View repos <i class="fas fa-arrow-right"></i></span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="availability-status">
+                            <div class="status-indicator online"></div>
+                            <span>Currently open to opportunities</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container large">
+                        <div class="form-header">
+                            <h3>Send a Message</h3>
+                            <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+                        </div>
+                        <form id="contactForm" class="contact-form" onsubmit="sendEmail(event)">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">
+                                        <span class="label-icon">></span> name
+                                    </label>
+                                    <input type="text" id="name" name="from_name" placeholder="Your name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">
+                                        <span class="label-icon">></span> email
+                                    </label>
+                                    <input type="email" id="email" name="from_email" placeholder="your@email.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">
+                                    <span class="label-icon">></span> subject
+                                </label>
+                                <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">
+                                    <span class="label-icon">></span> message
+                                </label>
+                                <textarea id="message" name="message" rows="6" placeholder="Your message..." required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <span class="btn-text">$ send_message</span>
+                                <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- AI Assistant Section -->
+                <div class="ai-assistant-section">
+                    <div class="section-header-sm">
+                        <div class="ai-header">
+                            <div class="ai-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div>
+                                <h2 class="section-title-sm">Ask Shubham's AI Assistant</h2>
+                                <p class="ai-subtitle">Get instant answers about my background, skills, and projects. Complex questions will be forwarded to me.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-container">
+                        <div class="chat-messages" id="chatMessages">
+                            <div class="chat-message bot">
+                                <div class="message-avatar">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div class="message-content">
+                                    <p>Hi! I'm Shubham's AI assistant. I can answer questions about his background, skills, projects, and availability. What would you like to know?</p>
+                                    <div class="quick-questions">
+                                        <button class="quick-q" onclick="askQuestion('What are your main skills?')">Skills</button>
+                                        <button class="quick-q" onclick="askQuestion('Tell me about your research')">Research</button>
+                                        <button class="quick-q" onclick="askQuestion('What projects have you worked on?')">Projects</button>
+                                        <button class="quick-q" onclick="askQuestion('Are you available for work?')">Availability</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-input-container">
+                            <input type="text" id="chatInput" class="chat-input" placeholder="Ask me anything about Shubham..." onkeypress="handleChatKeypress(event)">
+                            <button class="chat-send-btn" onclick="sendChatMessage()">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Section -->
+                <div class="faq-section">
+                    <h2 class="section-title-sm">Frequently Asked</h2>
+                    <div class="faq-grid">
+                        <div class="faq-item">
+                            <h4>What kind of opportunities are you looking for?</h4>
+                            <p>I'm interested in roles focused on AI infrastructure, systems engineering, and ML platform development. I'm particularly drawn to positions where I can apply systems thinking to make AI more efficient and reliable.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>Are you available for freelance or consulting work?</h4>
+                            <p>Depending on the project scope and timeline, I may be available for consulting on AI infrastructure, systems optimization, or full-stack development projects. Feel free to reach out to discuss.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>What's your typical response time?</h4>
+                            <p>I typically respond to emails within 24-48 hours. For urgent matters, LinkedIn messages tend to get faster responses.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>Can I see more of your work?</h4>
+                            <p>Absolutely! Check out my <a href="https://github.com/Shubh3005" target="_blank">GitHub profile</a> for code samples, or visit the <a href="projects.html">Projects page</a> for detailed case studies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="index.html" class="footer-logo">
+                    <span class="logo-bracket">[</span>
+                    <span class="logo-text">SG</span>
+                    <span class="logo-bracket">]</span>
+                </a>
+                <div class="footer-links">
+                    <a href="https://linkedin.com/in/shubhgupta7049" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Shubh3005" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:skg5962@psu.edu">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <p class="footer-text">
+                    <span class="code-comment">// Built with systems thinking</span>
+                </p>
+                <p class="copyright">&copy; 2024 Shubham Gupta. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
