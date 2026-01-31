@@ -22,6 +22,81 @@ const EMAILJS_CONFIG = {
 })();
 
 // ============================================
+// THEME TOGGLE (Light/Dark Mode)
+// ============================================
+(function initTheme() {
+    // Check for saved theme preference or default to light
+    const savedTheme = localStorage.getItem('theme');
+    
+    if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    }
+    // If no saved preference, default is light (no data-theme attribute needed)
+})();
+
+function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    if (newTheme === 'light') {
+        document.documentElement.removeAttribute('data-theme');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+    
+    localStorage.setItem('theme', newTheme);
+    
+    // Update matrix background color for theme
+    updateMatrixColor(newTheme);
+}
+
+function updateMatrixColor(theme) {
+    const canvas = document.getElementById('matrix-bg');
+    if (!canvas) return;
+    
+    // Matrix will automatically adjust via CSS opacity variable
+    // But we can also change the character color
+    if (window.matrixCtx) {
+        window.matrixColor = theme === 'dark' ? '#22d3ee' : '#0891b2';
+    }
+}
+
+// Attach theme toggle to button
+document.addEventListener('DOMContentLoaded', function() {
+    const themeToggle = document.getElementById('themeToggle');
+    if (themeToggle) {
+        themeToggle.addEventListener('click', toggleTheme);
+    }
+    
+    // Chat widget toggle
+    const chatWidgetBtn = document.getElementById('chatWidgetBtn');
+    const chatWidgetWindow = document.getElementById('chatWidgetWindow');
+    const chatWidgetClose = document.getElementById('chatWidgetClose');
+    
+    if (chatWidgetBtn && chatWidgetWindow) {
+        chatWidgetBtn.addEventListener('click', function() {
+            chatWidgetWindow.classList.toggle('active');
+            chatWidgetBtn.classList.toggle('hidden');
+        });
+        
+        if (chatWidgetClose) {
+            chatWidgetClose.addEventListener('click', function() {
+                chatWidgetWindow.classList.remove('active');
+                chatWidgetBtn.classList.remove('hidden');
+            });
+        }
+        
+        // Close widget when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.chat-widget') && chatWidgetWindow.classList.contains('active')) {
+                chatWidgetWindow.classList.remove('active');
+                chatWidgetBtn.classList.remove('hidden');
+            }
+        });
+    }
+});
+
+// ============================================
 // MATRIX BACKGROUND ANIMATION
 // ============================================
 function initMatrixBackground() {
@@ -29,6 +104,7 @@ function initMatrixBackground() {
     if (!canvas) return;
     
     const ctx = canvas.getContext('2d');
+    window.matrixCtx = ctx; // Store globally for theme updates
     
     function resize() {
         canvas.width = window.innerWidth;
@@ -42,11 +118,20 @@ function initMatrixBackground() {
     const columns = Math.floor(canvas.width / fontSize);
     const drops = Array(columns).fill(1);
     
+    // Set initial color based on theme
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    window.matrixColor = isDark ? '#22d3ee' : '#0891b2';
+    
     function draw() {
-        ctx.fillStyle = 'rgba(2, 6, 23, 0.05)';
+        // Use theme-appropriate background clear color
+        const isDarkMode = document.documentElement.getAttribute('data-theme') === 'dark';
+        const bgColor = isDarkMode ? 'rgba(2, 6, 23, 0.05)' : 'rgba(255, 255, 255, 0.05)';
+        const charColor = isDarkMode ? '#22d3ee' : '#0891b2';
+        
+        ctx.fillStyle = bgColor;
         ctx.fillRect(0, 0, canvas.width, canvas.height);
         
-        ctx.fillStyle = '#22d3ee';
+        ctx.fillStyle = charColor;
         ctx.font = `${fontSize}px JetBrains Mono, monospace`;
         
         for (let i = 0; i < drops.length; i++) {

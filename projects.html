@@ -19,9 +19,7 @@
         <div class="container">
             <div class="nav-container">
                 <a href="index.html" class="logo">
-                    <span class="logo-bracket">[</span>
-                    <span class="logo-text">SG</span>
-                    <span class="logo-bracket">]</span>
+                    <img src="image/logo.png" alt="Shubham Gupta" class="logo-img">
                 </a>
                 <ul class="nav-links" id="navLinks">
                     <li><a href="index.html" class="nav-link">~/home</a></li>
@@ -29,6 +27,11 @@
                     <li><a href="projects.html" class="nav-link active">~/projects</a></li>
                     <li><a href="skills.html" class="nav-link">~/skills</a></li>
                     <li><a href="contact.html" class="nav-link">~/contact</a></li>
+                    <li class="mobile-social-links">
+                        <a href="https://linkedin.com/in/shubhgupta7049" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Shubh3005" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto:skg5962@psu.edu"><i class="fas fa-envelope"></i></a>
+                    </li>
                 </ul>
                 <div class="nav-social">
                     <a href="https://linkedin.com/in/shubhgupta7049" target="_blank" class="nav-social-link" title="LinkedIn">
@@ -41,6 +44,10 @@
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
+                <button class="theme-toggle" id="themeToggle" title="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
                     <span class="menu-icon"></span>
                 </button>
@@ -68,7 +75,7 @@
                     <button class="filter-btn" data-filter="featured">Featured</button>
                     <button class="filter-btn" data-filter="ai">AI/ML</button>
                     <button class="filter-btn" data-filter="systems">Systems</button>
-                    <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                    <button class="filter-btn" data-filter="fullstack">Applications</button>
                 </div>
 
                 <div class="projects-showcase">
@@ -479,9 +486,7 @@
         <div class="container">
             <div class="footer-content">
                 <a href="index.html" class="footer-logo">
-                    <span class="logo-bracket">[</span>
-                    <span class="logo-text">SG</span>
-                    <span class="logo-bracket">]</span>
+                    <img src="image/logo.png" alt="Shubham Gupta" class="logo-img">
                 </a>
                 <div class="footer-links">
                     <a href="https://linkedin.com/in/shubhgupta7049" target="_blank">
@@ -497,10 +502,49 @@
                 <p class="footer-text">
                     <span class="code-comment">// Built with systems thinking</span>
                 </p>
-                <p class="copyright">&copy; 2024 Shubham Gupta. All rights reserved.</p>
+                <p class="copyright">&copy; 2026 Shubham Gupta. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Floating AI Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <button class="chat-widget-btn" id="chatWidgetBtn" title="Ask AI Assistant">
+            <i class="fas fa-robot"></i>
+            <span class="chat-widget-pulse"></span>
+        </button>
+        <div class="chat-widget-window" id="chatWidgetWindow">
+            <div class="chat-widget-header">
+                <div class="chat-widget-title">
+                    <i class="fas fa-robot"></i>
+                    <span>AI Assistant</span>
+                </div>
+                <button class="chat-widget-close" id="chatWidgetClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="chat-message bot">
+                    <div class="message-avatar"><i class="fas fa-robot"></i></div>
+                    <div class="message-content">
+                        <p>Hi! I'm Shubham's AI assistant. Ask me anything about his skills, projects, research, or availability!</p>
+                        <div class="quick-questions">
+                            <button class="quick-q" onclick="askQuestion('What are your main skills?')">Skills</button>
+                            <button class="quick-q" onclick="askQuestion('Tell me about your research')">Research</button>
+                            <button class="quick-q" onclick="askQuestion('What projects have you worked on?')">Projects</button>
+                            <button class="quick-q" onclick="askQuestion('Are you available for work?')">Availability</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input-container">
+                <input type="text" id="chatInput" class="chat-input" placeholder="Ask me anything..." onkeypress="handleChatKeypress(event)">
+                <button class="chat-send-btn" onclick="sendChatMessage()">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
 
     <script src="scripts.js"></script>
 </body>
