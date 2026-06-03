@@ -17,6 +17,12 @@
       "one_liner": "YOLOv11-based computer vision system for real-time FTC game piece detection and field state analysis.",
       "project_name": "FTC Analyzer",
       "status": "active"
+    },
+    {
+      "last_updated": "2026-06-03",
+      "one_liner": "Raspberry Pi 5 audio pipeline using Whisper for real-time lecture transcription and summarization.",
+      "project_name": "LectureLens",
+      "status": "active"
     }
   ],
   "github": {
@@ -59,7 +65,7 @@
         "description": "",
         "name": "Personal-Website",
         "primary_language": "HTML",
-        "pushed_at": "2026-05-19T20:13:12Z",
+        "pushed_at": "2026-06-03T15:36:31Z",
         "stars": 0,
         "url": "https://github.com/Shubh3005/Personal-Website"
       },
@@ -77,7 +83,7 @@
         "description": "",
         "name": "Personal-Website",
         "primary_language": "HTML",
-        "pushed_at": "2026-05-19T20:13:12Z",
+        "pushed_at": "2026-06-03T15:36:31Z",
         "stars": 0,
         "url": "https://github.com/Shubh3005/Personal-Website"
       },
@@ -116,7 +122,7 @@
     ],
     "total_repos": 73
   },
-  "last_updated": "2026-06-03T15:36:29Z",
+  "last_updated": "2026-06-03T15:44:36Z",
   "projects": {
     "ftc_analyzer": {
       "mAP": null,

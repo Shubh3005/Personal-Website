@@ -16,5 +16,11 @@
     "one_liner": "YOLOv11-based computer vision system for real-time FTC game piece detection and field state analysis.",
     "status": "active",
     "last_updated": "2026-06-02"
+  },
+  {
+  "project_name": "LectureLens",
+  "status": "active",
+  "one_liner": "Raspberry Pi 5 audio pipeline using Whisper for real-time lecture transcription and summarization.",
+  "last_updated": "2026-06-03"
   }
 ]
