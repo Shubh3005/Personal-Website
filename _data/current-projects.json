@@ -1,0 +1,20 @@
+[
+  {
+    "project_name": "Portfolio Live Agent",
+    "one_liner": "Nightly GitHub Action that auto-updates shubham.us with live metrics from GitHub, Semantic Scholar, and Roboflow.",
+    "status": "active",
+    "last_updated": "2026-06-02"
+  },
+  {
+    "project_name": "Thesis — XAI Alignment",
+    "one_liner": "Studying model preference prediction and compliance scoring for responsible AI systems on PSU ICDS HPC.",
+    "status": "active",
+    "last_updated": "2026-06-02"
+  },
+  {
+    "project_name": "FTC Analyzer",
+    "one_liner": "YOLOv11-based computer vision system for real-time FTC game piece detection and field state analysis.",
+    "status": "active",
+    "last_updated": "2026-06-02"
+  }
+]

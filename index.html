@@ -91,15 +91,15 @@
                             <span>Contact</span>
                         </a>
                     </div>
-                    <div class="hero-stats">
+                    <div class="hero-stats data-pending">
                         <div class="stat-item" title="EfficientNet-B3 fine-tuned on HAM10000 — deployed to production">
-                            <span class="stat-value">63%</span>
+                            <span class="stat-value" data-portfolio-skiniq-val-accuracy>63%</span>
                             <span class="stat-label">Val Accuracy</span>
                             <span class="stat-context">ML Model — SkinIQ</span>
                         </div>
                         <div class="stat-divider"></div>
                         <div class="stat-item" title="AWP model preference prediction accuracy in XAI research — AIES-26">
-                            <span class="stat-value">84%</span>
+                            <span class="stat-value" data-portfolio-aies26-preference-accuracy>84%</span>
                             <span class="stat-label">Preference Prediction</span>
                             <span class="stat-context">AIES-26 Research</span>
                         </div>
@@ -166,6 +166,19 @@
                         <p>Let's discuss systems, AI infrastructure, or collaboration.</p>
                         <span class="preview-link">Connect <i class="fas fa-arrow-right"></i></span>
                     </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Currently Working On — populated from portfolio.json via scripts.js -->
+        <section class="section current-work-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">// CURRENT FOCUS</span>
+                    <h2 class="section-title">Currently Working On</h2>
+                </div>
+                <div class="current-work-grid" data-portfolio-current-work>
+                    <!-- Populated by loadPortfolioData() from portfolio.json -->
                 </div>
             </div>
         </section>
@@ -269,6 +282,7 @@
                     <a href="mailto:skg5962@psu.edu"><i class="fas fa-envelope"></i></a>
                 </div>
                 <p class="footer-text"><span class="code-comment">// Built with systems thinking</span></p>
+                <p class="footer-text" style="font-size:0.75rem;opacity:0.5"><span data-portfolio-last-updated></span></p>
                 <p class="copyright">&copy; 2026 Shubham Gupta. All rights reserved.</p>
             </div>
         </div>

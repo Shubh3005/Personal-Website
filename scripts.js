@@ -937,6 +937,93 @@ function escapeHtml(text) {
     return div.innerHTML;
 }
 
+// === PORTFOLIO DATA LAYER ===
+// Fetches portfolio.json and populates live metrics.
+// Edit this section when portfolio.json schema changes.
+
+function populateStats(portfolio) {
+    const valAcc = portfolio?.projects?.skiniq?.val_accuracy ?? null;
+    if (valAcc !== null) {
+        document.querySelectorAll('[data-portfolio-skiniq-val-accuracy]').forEach(el => {
+            el.textContent = Math.round(valAcc * 100) + '%';
+        });
+    }
+
+    const prefAcc = portfolio?.research?.aies26?.preference_prediction_accuracy ?? null;
+    if (prefAcc !== null) {
+        document.querySelectorAll('[data-portfolio-aies26-preference-accuracy]').forEach(el => {
+            el.textContent = Math.round(prefAcc * 100) + '%';
+        });
+    }
+
+    const citations = portfolio?.research?.aies26?.citation_count ?? null;
+    if (citations !== null) {
+        document.querySelectorAll('[data-portfolio-aies26-citations]').forEach(el => {
+            el.textContent = citations + (citations === 1 ? ' citation' : ' citations');
+        });
+    }
+}
+
+function populateProjects(portfolio) {
+    const ftc = portfolio?.projects?.ftc_analyzer ?? null;
+    if (ftc?.mAP !== null && ftc?.mAP !== undefined) {
+        document.querySelectorAll('[data-portfolio-ftc-map]').forEach(el => {
+            el.textContent = (ftc.mAP * 100).toFixed(1) + '% mAP';
+        });
+    }
+}
+
+function populateCurrentWork(portfolio) {
+    const projects = portfolio?.current_projects ?? null;
+    if (!projects || projects.length === 0) return;
+
+    const container = document.querySelector('[data-portfolio-current-work]');
+    if (!container) return;
+
+    container.innerHTML = projects.map(p => `
+        <div class="current-work-item">
+            <div class="current-work-header">
+                <span class="current-work-name">${escapeHtml(p.project_name)}</span>
+                <span class="current-work-status status-${escapeHtml(p.status)}">${escapeHtml(p.status)}</span>
+            </div>
+            <p class="current-work-oneliner">${escapeHtml(p.one_liner)}</p>
+        </div>
+    `).join('');
+}
+
+function displayTimestamp(portfolio) {
+    const ts = portfolio?.last_updated ?? null;
+    if (!ts) return;
+    const el = document.querySelector('[data-portfolio-last-updated]');
+    if (!el) return;
+    try {
+        const date = new Date(ts);
+        el.textContent = 'data: ' + date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+    } catch (_) { /* non-critical */ }
+}
+
+async function loadPortfolioData() {
+    const pendingEls = document.querySelectorAll('.data-pending');
+    try {
+        const resp = await fetch('/portfolio.json');
+        if (!resp.ok) throw new Error('HTTP ' + resp.status);
+        const portfolio = await resp.json();
+
+        populateStats(portfolio);
+        populateProjects(portfolio);
+        populateCurrentWork(portfolio);
+        displayTimestamp(portfolio);
+    } catch (_) {
+        // Fetch failed — hardcoded fallback values remain; just reveal the elements
+    } finally {
+        pendingEls.forEach(el => el.classList.remove('data-pending'));
+    }
+}
+
+document.addEventListener('DOMContentLoaded', loadPortfolioData);
+
+// === END PORTFOLIO DATA LAYER ===
+
 // Parse basic markdown to HTML for chat responses
 function parseMarkdown(text) {
     return text

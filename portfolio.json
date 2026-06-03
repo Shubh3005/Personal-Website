@@ -1,0 +1,147 @@
+{
+  "current_projects": [
+    {
+      "last_updated": "2026-06-02",
+      "one_liner": "Nightly GitHub Action that auto-updates shubham.us with live metrics from GitHub, Semantic Scholar, and Roboflow.",
+      "project_name": "Portfolio Live Agent",
+      "status": "active"
+    },
+    {
+      "last_updated": "2026-06-02",
+      "one_liner": "Studying model preference prediction and compliance scoring for responsible AI systems on PSU ICDS HPC.",
+      "project_name": "Thesis \u2014 XAI Alignment",
+      "status": "active"
+    },
+    {
+      "last_updated": "2026-06-02",
+      "one_liner": "YOLOv11-based computer vision system for real-time FTC game piece detection and field state analysis.",
+      "project_name": "FTC Analyzer",
+      "status": "active"
+    }
+  ],
+  "github": {
+    "commit_streak": 0,
+    "contributions_30d": 47,
+    "pinned_repos": [
+      {
+        "description": "",
+        "name": "NittanyAIMLB",
+        "primary_language": "Jupyter Notebook",
+        "pushed_at": "2024-11-23T00:03:59Z",
+        "stars": 0,
+        "url": "https://github.com/Shubh3005/NittanyAIMLB"
+      },
+      {
+        "description": "",
+        "name": "MarginCalc",
+        "primary_language": "Python",
+        "pushed_at": "2024-11-18T19:31:06Z",
+        "stars": 1,
+        "url": "https://github.com/Shubh3005/MarginCalc"
+      },
+      {
+        "description": "",
+        "name": "LeetCode",
+        "primary_language": "Python",
+        "pushed_at": "2025-07-29T17:49:34Z",
+        "stars": 0,
+        "url": "https://github.com/Shubh3005/LeetCode"
+      },
+      {
+        "description": "Privacy-first patient monitoring system using Computer Vision (MediaPipe) and Generative AI (Gemini) with real-time WebSocket streaming.",
+        "name": "mosaic-ward",
+        "primary_language": "TypeScript",
+        "pushed_at": "2026-02-08T16:25:55Z",
+        "stars": 0,
+        "url": "https://github.com/Shubh3005/mosaic-ward"
+      },
+      {
+        "description": "",
+        "name": "Personal-Website",
+        "primary_language": "HTML",
+        "pushed_at": "2026-05-19T20:13:12Z",
+        "stars": 0,
+        "url": "https://github.com/Shubh3005/Personal-Website"
+      },
+      {
+        "description": "",
+        "name": "SkinIQ",
+        "primary_language": "TypeScript",
+        "pushed_at": "2026-05-18T21:58:32Z",
+        "stars": 0,
+        "url": "https://github.com/Shubh3005/SkinIQ"
+      }
+    ],
+    "recent_repos": [
+      {
+        "description": "",
+        "name": "Personal-Website",
+        "primary_language": "HTML",
+        "pushed_at": "2026-05-19T20:13:12Z",
+        "stars": 0,
+        "url": "https://github.com/Shubh3005/Personal-Website"
+      },
+      {
+        "description": "",
+        "name": "SkinIQ",
+        "primary_language": "TypeScript",
+        "pushed_at": "2026-05-18T21:58:32Z",
+        "stars": 0,
+        "url": "https://github.com/Shubh3005/SkinIQ"
+      },
+      {
+        "description": "",
+        "name": "spaceship-titanic",
+        "primary_language": "Jupyter Notebook",
+        "pushed_at": "2026-04-28T17:58:04Z",
+        "stars": 0,
+        "url": "https://github.com/Shubh3005/spaceship-titanic"
+      },
+      {
+        "description": "My NeetCode.io problem submissions",
+        "name": "neetcode-submissions-qktoerfl",
+        "primary_language": "Python",
+        "pushed_at": "2026-04-14T18:21:36Z",
+        "stars": 0,
+        "url": "https://github.com/Shubh3005/neetcode-submissions-qktoerfl"
+      },
+      {
+        "description": "Privacy-first patient monitoring system using Computer Vision (MediaPipe) and Generative AI (Gemini) with real-time WebSocket streaming.",
+        "name": "mosaic-ward",
+        "primary_language": "TypeScript",
+        "pushed_at": "2026-02-08T16:25:55Z",
+        "stars": 0,
+        "url": "https://github.com/Shubh3005/mosaic-ward"
+      }
+    ],
+    "total_repos": 73
+  },
+  "last_updated": "2026-06-03T15:36:29Z",
+  "projects": {
+    "ftc_analyzer": {
+      "mAP": null,
+      "model_version": null,
+      "precision": null,
+      "recall": null
+    },
+    "skiniq": {
+      "classes": 7,
+      "f1_score": 0.66,
+      "val_accuracy": 0.63
+    }
+  },
+  "research": {
+    "aies26": {
+      "citation_count": null,
+      "paper_id": "[PLACEHOLDER]",
+      "preference_prediction_accuracy": 0.84
+    },
+    "thesis": {
+      "compliance_score": null,
+      "dataset": null,
+      "experiment_name": null,
+      "timestamp": null,
+      "weighted_f1": null
+    }
+  }
+}
