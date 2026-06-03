@@ -1005,7 +1005,7 @@ function displayTimestamp(portfolio) {
 async function loadPortfolioData() {
     const pendingEls = document.querySelectorAll('.data-pending');
     try {
-        const resp = await fetch('/portfolio.json');
+        const resp = await fetch('https://shubh3005.github.io/Personal-Website/portfolio.json');
         if (!resp.ok) throw new Error('HTTP ' + resp.status);
         const portfolio = await resp.json();
 
