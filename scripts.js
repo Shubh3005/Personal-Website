@@ -1,8 +1,3 @@
-// ============================================
-// SHUBHAM GUPTA - SYSTEMS ENGINEER PORTFOLIO
-// JavaScript Functionality
-// ============================================
-
 // EmailJS Configuration
 const EMAILJS_CONFIG = {
     PUBLIC_KEY: 'je7hIfvkFLv39w6Q_',
@@ -1005,7 +1000,7 @@ function displayTimestamp(portfolio) {
 async function loadPortfolioData() {
     const pendingEls = document.querySelectorAll('.data-pending');
     try {
-        const resp = await fetch('https://shubh3005.github.io/Personal-Website/portfolio.json');
+        const resp = await fetch('/portfolio.json');
         if (!resp.ok) throw new Error('HTTP ' + resp.status);
         const portfolio = await resp.json();
 
