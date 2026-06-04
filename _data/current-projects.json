@@ -13,9 +13,9 @@
   },
   {
     "project_name": "FTC Analyzer",
-    "one_liner": "YOLOv11-based computer vision system for real-time FTC game piece detection and field state analysis.",
+    "one_liner": "YOLOv11 robot detection at 94.9% mAP — real-time FTC field state analysis with hesitation detection.",
     "status": "active",
-    "last_updated": "2026-06-02"
+    "last_updated": "2026-06-03"
   },
   {
   "project_name": "LectureLens",
