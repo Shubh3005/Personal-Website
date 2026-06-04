@@ -23,62 +23,62 @@
     --blue-700: #1d4ed8;
     
     /* Light Mode (Default) */
-    --bg-primary: #ffffff;
-    --bg-secondary: #f8fafc;     /* slate-50 */
-    --bg-tertiary: #f1f5f9;      /* slate-100 */
-    --bg-card: #ffffff;
-    
+    --bg-primary: #f5f7fa;       /* cool off-white — not stark white */
+    --bg-secondary: #eef1f5;     /* slate-100 toned — distinct sections */
+    --bg-tertiary: #e2e8f0;      /* slate-200 — clear tertiary separation */
+    --bg-card: #ffffff;          /* cards stay white — creates elevation */
+
     --text-primary: #0f172a;     /* slate-900 */
     --text-secondary: #475569;   /* slate-600 */
     --text-muted: #64748b;       /* slate-500 */
-    
+
     --accent-primary: var(--cyan-600);
     --accent-secondary: var(--blue-600);
-    
-    --border-color: rgba(6, 182, 212, 0.15);
+
+    --border-color: rgba(15, 23, 42, 0.1);   /* slate-based — visible on gray bg */
     --border-glow: rgba(6, 182, 212, 0.3);
-    
+
     --gradient-primary: linear-gradient(135deg, var(--cyan-500), var(--blue-600));
     --gradient-dark: linear-gradient(135deg, var(--bg-secondary), var(--bg-primary));
-    
-    --shadow-glow: 0 4px 20px rgba(6, 182, 212, 0.1);
-    --shadow-glow-strong: 0 8px 40px rgba(6, 182, 212, 0.15);
-    --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-    
-    --code-bg: #f1f5f9;
-    --matrix-opacity: 0.03;
-    --nav-bg: rgba(255, 255, 255, 0.9);
-    --nav-scrolled-bg: rgba(255, 255, 255, 0.95);
+
+    --shadow-glow: 0 4px 20px rgba(6, 182, 212, 0.12);
+    --shadow-glow-strong: 0 8px 40px rgba(6, 182, 212, 0.18);
+    --shadow-soft: 0 1px 3px rgba(15, 23, 42, 0.08), 0 4px 12px rgba(15, 23, 42, 0.06);
+
+    --code-bg: #e8edf3;
+    --matrix-opacity: 0.025;
+    --nav-bg: rgba(245, 247, 250, 0.92);
+    --nav-scrolled-bg: rgba(245, 247, 250, 0.97);
 }
 
 /* Dark Mode */
 [data-theme="dark"] {
-    --bg-primary: #020617;       /* slate-950 */
+    --bg-primary: #080f1e;       /* richer deep navy — less harsh than pure black */
     --bg-secondary: #0f172a;     /* slate-900 */
-    --bg-tertiary: #1e293b;      /* slate-800 */
-    --bg-card: #0f172a;
-    
+    --bg-tertiary: #1a2540;      /* mid-depth layer */
+    --bg-card: #141e30;          /* lifted card vs primary — visible separation */
+
     --text-primary: #f1f5f9;     /* slate-100 */
     --text-secondary: #94a3b8;   /* slate-400 */
     --text-muted: #64748b;       /* slate-500 */
-    
+
     --accent-primary: var(--cyan-400);
     --accent-secondary: var(--blue-600);
-    
-    --border-color: rgba(34, 211, 238, 0.1);
+
+    --border-color: rgba(34, 211, 238, 0.12);
     --border-glow: rgba(34, 211, 238, 0.3);
-    
+
     --gradient-primary: linear-gradient(135deg, var(--cyan-400), var(--blue-600));
     --gradient-dark: linear-gradient(135deg, var(--bg-secondary), var(--bg-primary));
-    
+
     --shadow-glow: 0 0 30px rgba(34, 211, 238, 0.15);
     --shadow-glow-strong: 0 0 50px rgba(34, 211, 238, 0.25);
-    --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.2);
-    
-    --code-bg: #1e293b;
+    --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+
+    --code-bg: #1a2540;
     --matrix-opacity: 0.05;
-    --nav-bg: rgba(2, 6, 23, 0.85);
-    --nav-scrolled-bg: rgba(2, 6, 23, 0.95);
+    --nav-bg: rgba(8, 15, 30, 0.88);
+    --nav-scrolled-bg: rgba(8, 15, 30, 0.97);
 }
 
 /* Global Styles */
@@ -1971,6 +1971,71 @@ nav.scrolled {
     font-size: 0.9rem;
     color: var(--text-secondary);
     line-height: 1.6;
+}
+
+/* Beyond the Resume Section */
+.beyond-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.beyond-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.beyond-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.beyond-icon {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    border-radius: 8px;
+    background: rgba(6, 182, 212, 0.1);
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-primary);
+    font-size: 0.9rem;
+    margin-top: 2px;
+}
+
+.beyond-content h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.35rem;
+}
+
+.beyond-content p {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Skill tag primary variant */
+.skill-tag-primary {
+    background: rgba(6, 182, 212, 0.12);
+    border-color: rgba(6, 182, 212, 0.35);
+    color: var(--accent-primary);
+    font-weight: 600;
+}
+
+.skill-tag-note {
+    font-size: 0.65rem;
+    opacity: 0.75;
+    margin-left: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
 }
 
 /* Projects Page Styles */
