@@ -49,6 +49,7 @@
     --matrix-opacity: 0.025;
     --nav-bg: rgba(245, 247, 250, 0.92);
     --nav-scrolled-bg: rgba(245, 247, 250, 0.97);
+    --radius: 12px;
 }
 
 /* Dark Mode */
@@ -416,9 +417,7 @@ nav.scrolled {
     transition: opacity 0.3s ease;
 }
 
-.data-pending {
-    opacity: 0;
-}
+/* .data-pending — handled in UX Fixes section below */
 
 .stat-item {
     text-align: center;
@@ -800,6 +799,11 @@ nav.scrolled {
 .project-signal.business {
     background: linear-gradient(90deg, rgba(245, 158, 11, 0.2), transparent);
     color: #f59e0b;
+}
+
+.project-signal.cv-signal {
+    background: linear-gradient(90deg, rgba(236, 72, 153, 0.2), transparent);
+    color: #ec4899;
 }
 
 .project-header {
@@ -1897,8 +1901,223 @@ nav.scrolled {
 
 .philosophy-section,
 .education-section,
+.research-section,
+.experience-section,
 .current-focus {
     padding-top: 2rem;
+}
+
+/* Research Section */
+.research-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.research-entry {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    position: relative;
+    border-left: 3px solid var(--cyan-400);
+}
+
+.research-entry-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 0.75rem;
+}
+
+.research-venue-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 0.25rem 0.65rem;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.research-venue-badge.published {
+    background: rgba(34, 197, 94, 0.12);
+    color: #22c55e;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.research-venue-badge.in-progress {
+    background: rgba(251, 191, 36, 0.12);
+    color: #fbbf24;
+    border: 1px solid rgba(251, 191, 36, 0.3);
+}
+
+.research-venue {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent-primary);
+}
+
+.research-venue-full {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.research-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.research-contribution-label {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
+    margin-bottom: 0.4rem;
+}
+
+.research-question {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-style: italic;
+    margin-bottom: 0.4rem;
+}
+
+.research-contribution-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    margin-bottom: 1rem;
+}
+
+.research-contribution-list li {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    padding-left: 1.1rem;
+    position: relative;
+}
+
+.research-contribution-list li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--cyan-400);
+    font-size: 0.7rem;
+    top: 0.18rem;
+}
+
+.research-footer {
+    border-top: 1px solid var(--border-color);
+    padding-top: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.research-status {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.experience-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-left: 2px solid var(--border-color);
+    padding-left: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+.experience-item {
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.experience-item:last-child {
+    padding-bottom: 0;
+}
+
+.experience-marker {
+    position: absolute;
+    left: -1.875rem;
+    top: 0.35rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background: var(--cyan-400);
+    border: 2px solid var(--bg-primary);
+    box-shadow: 0 0 0 2px var(--cyan-400);
+}
+
+.experience-content {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+}
+
+.experience-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.5rem 1rem;
+    margin-bottom: 0.6rem;
+}
+
+.experience-header h4 {
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.experience-company {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--cyan-400);
+}
+
+.experience-date {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-left: auto;
+    font-family: var(--font-mono);
+}
+
+.experience-content p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+}
+
+.experience-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.exp-tag {
+    font-size: 0.75rem;
+    font-family: var(--font-mono);
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    color: var(--text-muted);
+    padding: 0.2rem 0.55rem;
+    border-radius: 4px;
 }
 
 .section-title-sm {
@@ -2945,9 +3164,8 @@ nav.scrolled {
 /* Stat Context */
 .stat-context {
     display: block;
-    font-size: 0.65rem;
-    color: var(--cyan-400);
-    opacity: 0.7;
+    font-size: 0.75rem;
+    color: var(--text-muted);
     margin-top: 0.25rem;
     font-family: var(--font-mono);
 }
@@ -3669,4 +3887,99 @@ a {
     .chat-widget-window .chat-messages {
         max-height: calc(70vh - 140px);
     }
+}
+
+/* ============================================
+   UX FIXES — Accessibility, Contrast, Responsive
+   ============================================ */
+
+/* Fix 1: Skip-to-content link */
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 1rem;
+    z-index: 9999;
+    padding: 0.6rem 1.2rem;
+    background: var(--bg-card);
+    color: var(--accent-primary);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 2px solid var(--accent-primary);
+    border-radius: 6px;
+    text-decoration: none;
+    transition: top 0.2s ease;
+}
+.skip-link:focus {
+    top: 1rem;
+}
+
+/* Fix 2: Focus-visible outlines */
+*:focus-visible {
+    outline: 2px solid var(--accent-primary);
+    outline-offset: 3px;
+    border-radius: 3px;
+}
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--accent-primary);
+    outline-offset: 3px;
+}
+
+/* Fix 3: Cyan text contrast in light mode
+   --cyan-400 (#22d3ee) on light bg = ~2.5:1 (fails WCAG AA)
+   Using --accent-primary which is cyan-600 in light, cyan-400 in dark */
+:root .tagline,
+:root .section-title-sm,
+:root .stat-value,
+:root .prompt,
+:root .nav-links a:hover,
+:root .nav-links a.active,
+:root .education-main,
+:root .experience-company {
+    color: var(--accent-primary);
+}
+/* Dark mode keeps cyan-400 (already set via --accent-primary) */
+
+/* Fix 4: Hero stats — show fallback values during load, subtle pulse only */
+.data-pending {
+    opacity: 0.55;
+    animation: data-pulse 1.8s ease-in-out infinite;
+}
+@keyframes data-pulse {
+    0%, 100% { opacity: 0.55; }
+    50% { opacity: 0.35; }
+}
+
+/* Fix 5: Experience timeline — mobile responsive */
+@media (max-width: 768px) {
+    .experience-timeline {
+        margin-left: 0;
+        padding-left: 1rem;
+    }
+    .experience-marker {
+        left: -1.375rem;
+    }
+    .experience-header {
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+    .experience-date {
+        margin-left: 0;
+        order: 3;
+    }
+    .experience-company {
+        order: 2;
+    }
+}
+
+/* Experience marker — current role gets a pulsing glow dot */
+.experience-marker.current {
+    background: var(--cyan-400);
+    box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.25), 0 0 0 6px rgba(34, 211, 238, 0.1);
+    animation: marker-pulse 2.5s ease-in-out infinite;
+}
+@keyframes marker-pulse {
+    0%, 100% { box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.25), 0 0 0 6px rgba(34, 211, 238, 0.1); }
+    50% { box-shadow: 0 0 0 4px rgba(34, 211, 238, 0.35), 0 0 0 8px rgba(34, 211, 238, 0.08); }
 }

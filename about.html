@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About — Shubham Gupta | Systems Thinker, Penn State CS</title>
+    <title>About — Shubham Gupta | AI Engineer, Penn State CS</title>
     <meta name="description" content="The story behind the systems thinker. CS senior at Penn State Schreyer Honors, robotics to AI infrastructure. Honors thesis, Deloitte AI Innovation Scholar, AIES-26.">
     <meta name="author" content="Shubham Gupta">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://shubham.us/about.html">
-    <meta property="og:title" content="About — Shubham Gupta | Systems Thinker">
+    <meta property="og:title" content="About — Shubham Gupta | AI Engineer, Penn State CS">
     <meta property="og:description" content="Robotics to AI infrastructure. CS @ Penn State Schreyer Honors, Honors thesis, Deloitte AI Innovation Scholar, AIES-26 accepted.">
     <meta property="og:image" content="https://shubham.us/image/og-banner.png">
     <meta property="og:image:width" content="2816">
     <meta property="og:image:height" content="1536">
     <meta property="og:site_name" content="shubham.us">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="About — Shubham Gupta | Systems Thinker">
+    <meta name="twitter:title" content="About — Shubham Gupta | AI Engineer, Penn State CS">
     <meta name="twitter:image" content="https://shubham.us/image/og-banner.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
@@ -25,8 +25,9 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <canvas id="matrix-bg"></canvas>
-    
+
     <nav id="navbar">
         <div class="container">
             <div class="nav-container">
@@ -62,7 +63,7 @@
         </div>
     </nav>
 
-    <main class="main-content page-content">
+    <main id="main-content" class="main-content page-content">
         <section class="page-header">
             <div class="container">
                 <div class="breadcrumb">
@@ -157,6 +158,156 @@
                         </div>
                     </div>
 
+                    <!-- Research -->
+                    <div class="research-section">
+                        <h2 class="section-title-sm">Research</h2>
+                        <div class="research-list">
+
+                            <div class="research-entry">
+                                <div class="research-entry-header">
+                                    <div class="research-venue-badge published">
+                                        <i class="fas fa-check-circle"></i> Accepted
+                                    </div>
+                                    <span class="research-venue">AAAI/ACM AIES-26</span>
+                                    <span class="research-venue-full">Conference on AI, Ethics &amp; Society</span>
+                                </div>
+                                <h4 class="research-title">"Do Personalized Evaluation Functions Reflect Human Preferences? A Study of Weighted Proximity in Algorithmic Recourse"</h4>
+                                <div class="research-contribution">
+                                    <p class="research-contribution-label">My contribution:</p>
+                                    <ul class="research-contribution-list">
+                                        <li>Engineered the AWP evaluation pipeline and ran ablation studies across 5 distance metrics</li>
+                                        <li>Wrote the experimental design section; designed the user study instrument</li>
+                                        <li><strong>Result:</strong> AWP-generated recourse achieved 84% human preference prediction vs. proximity-only baseline</li>
+                                    </ul>
+                                </div>
+                                <div class="research-footer">
+                                    <span class="research-status">Paper to appear at AIES-26 · Preprint forthcoming</span>
+                                </div>
+                            </div>
+
+                            <div class="research-entry">
+                                <div class="research-entry-header">
+                                    <div class="research-venue-badge in-progress">
+                                        <i class="fas fa-flask"></i> In Progress
+                                    </div>
+                                    <span class="research-venue">Penn State Schreyer Honors Thesis</span>
+                                    <span class="research-venue-full">With Prof. Qunhua Li, Department of Statistics</span>
+                                </div>
+                                <h4 class="research-title">"LLM-based Codebook Annotation for Political Science Text"</h4>
+                                <div class="research-contribution">
+                                    <p class="research-contribution-label">Research question:</p>
+                                    <p class="research-question">Can LLMs reliably annotate political events using expert-defined codebooks — and do they follow definitions, or just label-name heuristics?</p>
+                                    <p class="research-contribution-label" style="margin-top:0.6rem;">Novel contributions:</p>
+                                    <ul class="research-contribution-list">
+                                        <li><strong>Definition compliance metric</strong> — swapped-label accuracy to test whether models use definitions vs. surface label names</li>
+                                        <li><strong>RAG-augmented annotation pipeline</strong> (k=5) — weighted F1 = 0.7012 vs. 0.6494 baseline</li>
+                                        <li>Running experiments on PSU ICDS HPC across 3 datasets: CCC, BFRS, Manifestos</li>
+                                    </ul>
+                                </div>
+                                <div class="research-footer">
+                                    <span class="research-status">Targeting EMNLP / ACL</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Work Experience -->
+                    <div class="experience-section">
+                        <h2 class="section-title-sm">Experience</h2>
+                        <div class="experience-timeline">
+
+                            <div class="experience-item">
+                                <div class="experience-marker current"></div>
+                                <div class="experience-content">
+                                    <div class="experience-header">
+                                        <h4>AI Innovation Fellow</h4>
+                                        <span class="experience-company">Deloitte</span>
+                                        <span class="experience-date">June 2026 – Aug. 2026</span>
+                                    </div>
+                                    <p>Selected for competitive AI Innovation program — building production software systems and scalable AI infrastructure for enterprise applications. Philadelphia, PA.</p>
+                                    <div class="experience-tags">
+                                        <span class="exp-tag">LLM Engineering</span>
+                                        <span class="exp-tag">Enterprise AI</span>
+                                        <span class="exp-tag">Production Systems</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="experience-item">
+                                <div class="experience-marker current"></div>
+                                <div class="experience-content">
+                                    <div class="experience-header">
+                                        <h4>Undergraduate Research Assistant</h4>
+                                        <span class="experience-company">Penn State — Prof. Qunhua Li</span>
+                                        <span class="experience-date">Jan. 2026 – Present</span>
+                                    </div>
+                                    <p>Engineered end-to-end NLP pipeline for large-scale text annotation on the ICDS Roar HPC cluster using distributed compute. Designed automated evaluation metrics comparing LLM annotation outputs across thousands of political science text samples.</p>
+                                    <div class="experience-tags">
+                                        <span class="exp-tag">NLP</span>
+                                        <span class="exp-tag">HPC / SLURM</span>
+                                        <span class="exp-tag">LLM Evaluation</span>
+                                        <span class="exp-tag">Python</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="experience-item">
+                                <div class="experience-marker"></div>
+                                <div class="experience-content">
+                                    <div class="experience-header">
+                                        <h4>Systems Programming Learning Assistant</h4>
+                                        <span class="experience-company">Penn State University</span>
+                                        <span class="experience-date">Aug. 2025 – Jan. 2026</span>
+                                    </div>
+                                    <p>Guided 100+ students in C and Unix systems programming — memory management, process control, file I/O, and concurrency. Reduced runtime errors by 30%.</p>
+                                    <div class="experience-tags">
+                                        <span class="exp-tag">C</span>
+                                        <span class="exp-tag">Unix Systems</span>
+                                        <span class="exp-tag">Concurrency</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="experience-item">
+                                <div class="experience-marker"></div>
+                                <div class="experience-content">
+                                    <div class="experience-header">
+                                        <h4>IT Summer Associate</h4>
+                                        <span class="experience-company">UPMC</span>
+                                        <span class="experience-date">June 2025 – Aug. 2025</span>
+                                    </div>
+                                    <p>Engineered Nursing Matrix application using ASP.NET Core and C#, integrating Epic EHR data across four hospital units serving 200+ staff. Architected RESTful API layer with Redis caching, reducing query latency 18% under concurrent load.</p>
+                                    <div class="experience-tags">
+                                        <span class="exp-tag">C# / ASP.NET</span>
+                                        <span class="exp-tag">Redis</span>
+                                        <span class="exp-tag">Epic EHR</span>
+                                        <span class="exp-tag">React + TypeScript</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="experience-item">
+                                <div class="experience-marker"></div>
+                                <div class="experience-content">
+                                    <div class="experience-header">
+                                        <h4>AI &amp; Automation Developer</h4>
+                                        <span class="experience-company">Catalyst Solutions</span>
+                                        <span class="experience-date">May 2024 – Sep. 2024</span>
+                                    </div>
+                                    <p>Built AI and RPA solutions to automate business processes on the Artificial Intelligence/Automation team. Worked with Generative AI, OpenAI API, N8N workflows, Google Cloud, and Google Colab. Remote.</p>
+                                    <div class="experience-tags">
+                                        <span class="exp-tag">OpenAI API</span>
+                                        <span class="exp-tag">N8N</span>
+                                        <span class="exp-tag">Google Cloud</span>
+                                        <span class="exp-tag">RPA</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
                     <!-- Current Focus — UPDATED -->
                     <div class="current-focus">
                         <h2 class="section-title-sm">Current Focus</h2>
@@ -189,10 +340,17 @@
                         <h2 class="section-title-sm">Beyond the Resume</h2>
                         <div class="beyond-grid">
                             <div class="beyond-item">
-                                <div class="beyond-icon"><i class="fas fa-robot"></i></div>
+                                <div class="beyond-icon"><i class="fas fa-globe"></i></div>
                                 <div class="beyond-content">
-                                    <h4>Robotics</h4>
-                                    <p>Started with FIRST, now mentoring teams globally. Building robots teaches what software alone can't — physical constraints, real-time failure, systems that have to work the first time.</p>
+                                    <h4>FIRST Global Mentor</h4>
+                                    <p>5 years mentoring FTC robotics teams across 4 countries (Belize, Niger, Rwanda, Bolivia). 50+ students. Leadership under hard constraints — robots have to work on competition day.</p>
+                                </div>
+                            </div>
+                            <div class="beyond-item">
+                                <div class="beyond-icon"><i class="fas fa-stopwatch"></i></div>
+                                <div class="beyond-content">
+                                    <h4>Ri3D Founding Member + Mechanical Lead</h4>
+                                    <p>Robot in 3 Days — full competition robot designed and built in 72 hours. Ships under pressure.</p>
                                 </div>
                             </div>
                             <div class="beyond-item">

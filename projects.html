@@ -25,8 +25,9 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <canvas id="matrix-bg"></canvas>
-    
+
     <nav id="navbar">
         <div class="container">
             <div class="nav-container">
@@ -62,7 +63,7 @@
         </div>
     </nav>
 
-    <main class="main-content page-content">
+    <main id="main-content" class="main-content page-content">
         <section class="page-header">
             <div class="container">
                 <div class="breadcrumb">
@@ -304,137 +305,49 @@
                         </div>
                     </div>
 
-                    <!-- Project F: Urban Analytics -->
-                    <div class="project-card" data-category="fullstack ai">
-                        <div class="project-signal data-viz">
-                            <span class="signal-label">THE DATA VISUALIZATION SIGNAL</span>
+                    <!-- Project F: Real-time CV Signal -->
+                    <div class="project-card featured" data-category="featured ai fullstack">
+                        <div class="project-signal cv-signal">
+                            <span class="signal-label">THE REAL-TIME CV SIGNAL</span>
                         </div>
                         <div class="project-header">
                             <div class="project-icon">
-                                <i class="fas fa-map-marked-alt"></i>
+                                <i class="fas fa-heartbeat"></i>
                             </div>
                             <div class="project-meta">
                                 <span class="project-role">Full Stack Developer</span>
+                                <span class="project-event">TartanHacks 2026</span>
                             </div>
                         </div>
-                        <h3 class="project-title">SF Urban Analytics Platform</h3>
-                        <p class="project-oneliner">AI-powered civic data visualization and insights.</p>
+                        <h3 class="project-title">Mosaic-Ward</h3>
+                        <p class="project-oneliner">Privacy-first patient monitoring — no raw video stored.</p>
                         <p class="project-description">
-                            Interactive mapping application for visualizing urban data with AI-powered insights
-                            and report generation. Features multi-layer data visualization (crime, SF311 requests),
-                            neighborhood analytics, and automated PDF report generation for civic engagement.
+                            Real-time patient monitoring system using MediaPipe pose/gesture detection and Gemini multimodal LLM for clinical assessment. WebSocket streaming delivers sub-100ms latency with zero raw video retention — HIPAA-conscious by design. Abstracts patient data to skeletal landmarks before any inference call.
                         </p>
                         <div class="project-metrics">
                             <div class="metric">
-                                <span class="metric-value">Multi-layer</span>
-                                <span class="metric-label">Data Visualization</span>
+                                <span class="metric-value">&lt;100ms</span>
+                                <span class="metric-label">Inference Latency</span>
                             </div>
                             <div class="metric">
                                 <span class="metric-value">Real-time</span>
-                                <span class="metric-label">API Integration</span>
+                                <span class="metric-label">WebSocket Streaming</span>
                             </div>
                         </div>
                         <div class="tech-stack">
-                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">MediaPipe</span>
+                            <span class="tech-tag">Gemini API</span>
+                            <span class="tech-tag">WebSockets</span>
                             <span class="tech-tag">TypeScript</span>
-                            <span class="tech-tag">Deck.gl</span>
-                            <span class="tech-tag">MapLibre</span>
-                            <span class="tech-tag">Tailwind</span>
+                            <span class="tech-tag">FastAPI</span>
                         </div>
                         <div class="project-footer">
-                            <a href="https://github.com/Shubh3005/sf-map-project" target="_blank" class="project-link">
+                            <a href="https://github.com/Shubh3005/mosaic-ward" target="_blank" class="project-link">
                                 <i class="fab fa-github"></i> View Source
                             </a>
                         </div>
                     </div>
 
-                    <!-- Project G: Nittany AI MLB -->
-                    <div class="project-card" data-category="ai">
-                        <div class="project-signal learning">
-                            <span class="signal-label">THE DEEP LEARNING SIGNAL</span>
-                        </div>
-                        <div class="project-header">
-                            <div class="project-icon">
-                                <i class="fas fa-graduation-cap"></i>
-                            </div>
-                            <div class="project-meta">
-                                <span class="project-role">ML Engineer</span>
-                                <span class="project-institution">Nittany AI Alliance</span>
-                            </div>
-                        </div>
-                        <h3 class="project-title">Nittany AI ML Portfolio</h3>
-                        <p class="project-oneliner">Comprehensive ML/AI technique implementations.</p>
-                        <p class="project-description">
-                            Collection of advanced AI and Machine Learning implementations including
-                            Neural Networks from scratch, Fine-Tuning techniques, and RAG model
-                            implementations developed during the Nittany AI Alliance's Machine Learning Bootcamp.
-                        </p>
-                        <div class="project-metrics">
-                            <div class="metric">
-                                <span class="metric-value">Neural Nets</span>
-                                <span class="metric-label">From Scratch</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">RAG</span>
-                                <span class="metric-label">Implementation</span>
-                            </div>
-                        </div>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">PyTorch</span>
-                            <span class="tech-tag">Jupyter</span>
-                            <span class="tech-tag">Fine-tuning</span>
-                            <span class="tech-tag">RAG</span>
-                        </div>
-                        <div class="project-footer">
-                            <a href="https://github.com/Shubh3005/NittanyAIMLB" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> View Source
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Project H: AI Secretary Agent -->
-                    <div class="project-card" data-category="ai">
-                        <div class="project-signal automation">
-                            <span class="signal-label">THE AUTOMATION SIGNAL</span>
-                        </div>
-                        <div class="project-header">
-                            <div class="project-icon">
-                                <i class="fas fa-robot"></i>
-                            </div>
-                            <div class="project-meta">
-                                <span class="project-role">Developer</span>
-                            </div>
-                        </div>
-                        <h3 class="project-title">AI Secretary Agent</h3>
-                        <p class="project-oneliner">Multi-service AI assistant with tool integrations.</p>
-                        <p class="project-description">
-                            Autonomous AI agent that integrates with Gmail, Google Calendar, and Notion
-                            to automate personal productivity workflows. Features modular architecture
-                            for easy extension with additional service integrations.
-                        </p>
-                        <div class="project-metrics">
-                            <div class="metric">
-                                <span class="metric-value">3+</span>
-                                <span class="metric-label">Service Integrations</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">Modular</span>
-                                <span class="metric-label">Architecture</span>
-                            </div>
-                        </div>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Gmail API</span>
-                            <span class="tech-tag">Calendar API</span>
-                            <span class="tech-tag">Notion API</span>
-                        </div>
-                        <div class="project-footer">
-                            <a href="https://github.com/Shubh3005/ai-secretary-agent" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> View Source
-                            </a>
-                        </div>
-                    </div>
 
                 </div>
 
