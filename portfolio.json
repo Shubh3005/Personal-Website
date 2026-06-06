@@ -27,7 +27,7 @@
   ],
   "github": {
     "commit_streak": 0,
-    "contributions_30d": 60,
+    "contributions_30d": 67,
     "pinned_repos": [
       {
         "description": "",
@@ -65,7 +65,7 @@
         "description": "",
         "name": "Personal-Website",
         "primary_language": "HTML",
-        "pushed_at": "2026-06-04T21:51:59Z",
+        "pushed_at": "2026-06-05T06:11:24Z",
         "stars": 0,
         "url": "https://github.com/Shubh3005/Personal-Website"
       },
@@ -80,10 +80,18 @@
     ],
     "recent_repos": [
       {
+        "description": "My NeetCode.io problem submissions",
+        "name": "neetcode-submissions-qktoerfl",
+        "primary_language": "Python",
+        "pushed_at": "2026-06-05T20:24:14Z",
+        "stars": 0,
+        "url": "https://github.com/Shubh3005/neetcode-submissions-qktoerfl"
+      },
+      {
         "description": "",
         "name": "Personal-Website",
         "primary_language": "HTML",
-        "pushed_at": "2026-06-04T21:51:59Z",
+        "pushed_at": "2026-06-05T06:11:24Z",
         "stars": 0,
         "url": "https://github.com/Shubh3005/Personal-Website"
       },
@@ -104,14 +112,6 @@
         "url": "https://github.com/Shubh3005/spaceship-titanic"
       },
       {
-        "description": "My NeetCode.io problem submissions",
-        "name": "neetcode-submissions-qktoerfl",
-        "primary_language": "Python",
-        "pushed_at": "2026-04-14T18:21:36Z",
-        "stars": 0,
-        "url": "https://github.com/Shubh3005/neetcode-submissions-qktoerfl"
-      },
-      {
         "description": "Privacy-first patient monitoring system using Computer Vision (MediaPipe) and Generative AI (Gemini) with real-time WebSocket streaming.",
         "name": "mosaic-ward",
         "primary_language": "TypeScript",
@@ -120,9 +120,9 @@
         "url": "https://github.com/Shubh3005/mosaic-ward"
       }
     ],
-    "total_repos": 74
+    "total_repos": 75
   },
-  "last_updated": "2026-06-05T06:11:23Z",
+  "last_updated": "2026-06-06T05:45:24Z",
   "projects": {
     "ftc_analyzer": {
       "mAP": 0.949,
