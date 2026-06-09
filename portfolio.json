@@ -27,24 +27,8 @@
   ],
   "github": {
     "commit_streak": 0,
-    "contributions_30d": 71,
+    "contributions_30d": 76,
     "pinned_repos": [
-      {
-        "description": "",
-        "name": "NittanyAIMLB",
-        "primary_language": "Jupyter Notebook",
-        "pushed_at": "2024-11-23T00:03:59Z",
-        "stars": 0,
-        "url": "https://github.com/Shubh3005/NittanyAIMLB"
-      },
-      {
-        "description": "",
-        "name": "MarginCalc",
-        "primary_language": "Python",
-        "pushed_at": "2024-11-18T19:31:06Z",
-        "stars": 1,
-        "url": "https://github.com/Shubh3005/MarginCalc"
-      },
       {
         "description": "",
         "name": "LeetCode",
@@ -57,7 +41,7 @@
         "description": "Privacy-first patient monitoring system using Computer Vision (MediaPipe) and Generative AI (Gemini) with real-time WebSocket streaming.",
         "name": "mosaic-ward",
         "primary_language": "TypeScript",
-        "pushed_at": "2026-02-08T16:25:55Z",
+        "pushed_at": "2026-06-08T13:54:25Z",
         "stars": 0,
         "url": "https://github.com/Shubh3005/mosaic-ward"
       },
@@ -65,7 +49,7 @@
         "description": "",
         "name": "Personal-Website",
         "primary_language": "HTML",
-        "pushed_at": "2026-06-07T06:11:57Z",
+        "pushed_at": "2026-06-08T13:56:29Z",
         "stars": 0,
         "url": "https://github.com/Shubh3005/Personal-Website"
       },
@@ -76,6 +60,14 @@
         "pushed_at": "2026-05-18T21:58:32Z",
         "stars": 0,
         "url": "https://github.com/Shubh3005/SkinIQ"
+      },
+      {
+        "description": "",
+        "name": "HealthcareAgent",
+        "primary_language": "JavaScript",
+        "pushed_at": "2026-06-08T13:57:10Z",
+        "stars": 0,
+        "url": "https://github.com/Shubh3005/HealthcareAgent"
       }
     ],
     "recent_repos": [
@@ -83,17 +75,33 @@
         "description": "My NeetCode.io problem submissions",
         "name": "neetcode-submissions-qktoerfl",
         "primary_language": "Python",
-        "pushed_at": "2026-06-08T02:38:22Z",
+        "pushed_at": "2026-06-09T02:10:14Z",
         "stars": 0,
         "url": "https://github.com/Shubh3005/neetcode-submissions-qktoerfl"
       },
       {
         "description": "",
+        "name": "HealthcareAgent",
+        "primary_language": "JavaScript",
+        "pushed_at": "2026-06-08T13:57:10Z",
+        "stars": 0,
+        "url": "https://github.com/Shubh3005/HealthcareAgent"
+      },
+      {
+        "description": "",
         "name": "Personal-Website",
         "primary_language": "HTML",
-        "pushed_at": "2026-06-07T06:11:57Z",
+        "pushed_at": "2026-06-08T13:56:29Z",
         "stars": 0,
         "url": "https://github.com/Shubh3005/Personal-Website"
+      },
+      {
+        "description": "Privacy-first patient monitoring system using Computer Vision (MediaPipe) and Generative AI (Gemini) with real-time WebSocket streaming.",
+        "name": "mosaic-ward",
+        "primary_language": "TypeScript",
+        "pushed_at": "2026-06-08T13:54:25Z",
+        "stars": 0,
+        "url": "https://github.com/Shubh3005/mosaic-ward"
       },
       {
         "description": "",
@@ -102,27 +110,11 @@
         "pushed_at": "2026-05-18T21:58:32Z",
         "stars": 0,
         "url": "https://github.com/Shubh3005/SkinIQ"
-      },
-      {
-        "description": "",
-        "name": "spaceship-titanic",
-        "primary_language": "Jupyter Notebook",
-        "pushed_at": "2026-04-28T17:58:04Z",
-        "stars": 0,
-        "url": "https://github.com/Shubh3005/spaceship-titanic"
-      },
-      {
-        "description": "Privacy-first patient monitoring system using Computer Vision (MediaPipe) and Generative AI (Gemini) with real-time WebSocket streaming.",
-        "name": "mosaic-ward",
-        "primary_language": "TypeScript",
-        "pushed_at": "2026-02-08T16:25:55Z",
-        "stars": 0,
-        "url": "https://github.com/Shubh3005/mosaic-ward"
       }
     ],
     "total_repos": 75
   },
-  "last_updated": "2026-06-08T06:26:56Z",
+  "last_updated": "2026-06-09T05:58:55Z",
   "projects": {
     "ftc_analyzer": {
       "mAP": 0.949,
