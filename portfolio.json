@@ -27,7 +27,7 @@
   ],
   "github": {
     "commit_streak": 0,
-    "contributions_30d": 85,
+    "contributions_30d": 88,
     "pinned_repos": [
       {
         "description": "",
@@ -49,7 +49,7 @@
         "description": "",
         "name": "Personal-Website",
         "primary_language": "HTML",
-        "pushed_at": "2026-06-10T06:11:54Z",
+        "pushed_at": "2026-06-11T06:38:45Z",
         "stars": 0,
         "url": "https://github.com/Shubh3005/Personal-Website"
       },
@@ -65,7 +65,7 @@
         "description": "",
         "name": "HealthcareAgent",
         "primary_language": "JavaScript",
-        "pushed_at": "2026-06-08T13:57:10Z",
+        "pushed_at": "2026-06-11T14:52:30Z",
         "stars": 0,
         "url": "https://github.com/Shubh3005/HealthcareAgent"
       },
@@ -73,12 +73,36 @@
         "description": "High-level library to help with training and evaluating neural networks in PyTorch flexibly and transparently.",
         "name": "ignite",
         "primary_language": "Python",
-        "pushed_at": "2026-06-10T14:14:58Z",
+        "pushed_at": "2026-06-11T09:13:08Z",
         "stars": 4769,
         "url": "https://github.com/pytorch/ignite"
       }
     ],
     "recent_repos": [
+      {
+        "description": "",
+        "name": "codebase-frontend",
+        "primary_language": "TypeScript",
+        "pushed_at": "2026-06-12T02:18:25Z",
+        "stars": 0,
+        "url": "https://github.com/Shubh3005/codebase-frontend"
+      },
+      {
+        "description": "",
+        "name": "HealthcareAgent",
+        "primary_language": "JavaScript",
+        "pushed_at": "2026-06-11T14:52:30Z",
+        "stars": 0,
+        "url": "https://github.com/Shubh3005/HealthcareAgent"
+      },
+      {
+        "description": "",
+        "name": "Personal-Website",
+        "primary_language": "HTML",
+        "pushed_at": "2026-06-11T06:38:45Z",
+        "stars": 0,
+        "url": "https://github.com/Shubh3005/Personal-Website"
+      },
       {
         "description": "My NeetCode.io problem submissions",
         "name": "neetcode-submissions-qktoerfl",
@@ -88,41 +112,17 @@
         "url": "https://github.com/Shubh3005/neetcode-submissions-qktoerfl"
       },
       {
-        "description": "",
-        "name": "Personal-Website",
-        "primary_language": "HTML",
-        "pushed_at": "2026-06-10T06:11:54Z",
-        "stars": 0,
-        "url": "https://github.com/Shubh3005/Personal-Website"
-      },
-      {
-        "description": "",
-        "name": "HealthcareAgent",
-        "primary_language": "JavaScript",
-        "pushed_at": "2026-06-08T13:57:10Z",
-        "stars": 0,
-        "url": "https://github.com/Shubh3005/HealthcareAgent"
-      },
-      {
         "description": "Privacy-first patient monitoring system using Computer Vision (MediaPipe) and Generative AI (Gemini) with real-time WebSocket streaming.",
         "name": "mosaic-ward",
         "primary_language": "TypeScript",
         "pushed_at": "2026-06-08T13:54:25Z",
         "stars": 0,
         "url": "https://github.com/Shubh3005/mosaic-ward"
-      },
-      {
-        "description": "",
-        "name": "SkinIQ",
-        "primary_language": "TypeScript",
-        "pushed_at": "2026-05-18T21:58:32Z",
-        "stars": 0,
-        "url": "https://github.com/Shubh3005/SkinIQ"
       }
     ],
-    "total_repos": 77
+    "total_repos": 78
   },
-  "last_updated": "2026-06-11T06:38:44Z",
+  "last_updated": "2026-06-12T06:23:11Z",
   "projects": {
     "ftc_analyzer": {
       "mAP": 0.949,
