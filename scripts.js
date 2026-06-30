@@ -383,7 +383,7 @@ const observer = new IntersectionObserver(function(entries) {
 }, observerOptions);
 
 // Observe elements for animation
-document.querySelectorAll('.section, .project-card, .skill-category, .philosophy-item, .preview-card, .focus-item, .contact-card, .faq-item').forEach(el => {
+document.querySelectorAll('.project-card, .skill-category, .philosophy-item, .preview-card, .focus-item, .contact-card, .faq-item').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
     el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';

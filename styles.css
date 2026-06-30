@@ -1903,6 +1903,8 @@ nav.scrolled {
 .education-section,
 .research-section,
 .experience-section,
+.opensource-section,
+.writing-section,
 .current-focus {
     padding-top: 2rem;
 }
