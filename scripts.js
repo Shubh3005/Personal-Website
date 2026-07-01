@@ -571,7 +571,8 @@ window.addEventListener('scroll', debouncedScrollHandler, { passive: true });
 const SHUBHAM_KNOWLEDGE = {
     personal: {
         name: "Shubham Gupta",
-        role: "Systems Engineer / AI Infrastructure Builder",
+        role: "AI Engineer / Systems Builder",
+        current_role: "AI Innovation Fellow at Deloitte (Summer 2026)",
         tagline: "Engineering the Infrastructure for Responsible AI",
         identity: "Systems Thinker - I don't just train models; I build the plumbing (infrastructure, cost-efficiency, reliability) that makes them viable.",
         email: "skg5962@psu.edu",
@@ -585,57 +586,70 @@ const SHUBHAM_KNOWLEDGE = {
         degree: "B.S. Computer Science",
         minor: "AI Engineering",
         graduation: "December 2026",
-        status: "Current student"
+        status: "Current student — Honors thesis in progress"
     },
     skills: {
-        ai_infrastructure: ["RAG Pipelines", "LangChain", "LiteLLM", "Vector Databases (FAISS, ChromaDB)", "Gemini API", "OpenAI API", "Prompt Engineering", "Token Optimization"],
+        ai_infrastructure: ["RAG Pipelines", "FAISS", "sentence-transformers", "LangChain", "LiteLLM", "Vector Databases", "Groq API", "Gemini API", "OpenAI API", "Prompt Engineering", "Token Optimization"],
+        cloud_infra: ["AWS DynamoDB", "AWS S3", "Docker", "Railway", "Vercel", "HuggingFace Hub"],
         core_systems: ["C", "C++", "Pthreads", "Socket Programming", "Mutex Synchronization", "Distributed Systems", "Linux/Unix", "Memory Management"],
-        full_stack: ["React", "Next.js", "TypeScript", "JavaScript", "Python", "FastAPI", "PostgreSQL", "Redis", "Docker", "Supabase"],
-        research: ["PyTorch", "Scikit-learn", "Explainable AI (XAI)", "Algorithmic Recourse", "Counterfactual Explanations", "Convex Optimization"]
+        full_stack: ["React", "Next.js", "TypeScript", "JavaScript", "Python", "FastAPI", "PostgreSQL", "Redis", "Supabase"],
+        research: ["PyTorch", "EfficientNet", "Scikit-learn", "Explainable AI (XAI)", "Algorithmic Recourse", "Counterfactual Explanations", "Convex Optimization"]
     },
     projects: {
+        codebase: {
+            name: "CodeBase",
+            description: "AI-powered codebase intelligence tool — semantic search over any GitHub repo using sentence-transformers + FAISS. Multi-repo comparison with side-by-side architectural analysis. Groq LLaMA-3.3-70B drives sub-second answers grounded in actual code.",
+            live_url: "codebase-frontend.vercel.app",
+            github: "github.com/Shubh3005/CodeBase",
+            tech: ["FastAPI", "FAISS", "sentence-transformers", "AWS DynamoDB", "AWS S3", "Groq LLaMA-3.3-70B", "Next.js", "Vercel"]
+        },
+        skiniq: {
+            name: "SkinIQ",
+            description: "End-to-end ML product: fine-tuned EfficientNet-B3 on HAM10000 (10k dermoscopy images, 7 skin condition classes) with weighted loss and WeightedRandomSampler to handle 58:1 class imbalance. 63% val accuracy, macro F1 0.66. Dockerized FastAPI inference server on Railway, model weights on HuggingFace Hub, React/Vite frontend on Vercel with Supabase auth and scan history.",
+            live_url: "skin-iq.vercel.app",
+            github: "github.com/Shubh3005/SkinIQ",
+            tech: ["EfficientNet-B3", "PyTorch", "FastAPI", "Docker", "HuggingFace Hub", "Railway", "React", "Supabase"]
+        },
         research: {
-            name: "Explainable AI Research",
+            name: "Explainable AI Research — AIES-26",
             role: "Undergraduate Research Assistant",
-            organization: "Penn State College of Engineering",
-            period: "Oct 2025 - Present",
-            description: "Validating the Acceptability & Weighted Proximity (AWP) model to improve algorithmic recourse beyond standard proximity-based Counterfactual Explanations. Achieved 84% preference prediction accuracy.",
-            publication: "Manuscript targeting early 2026 submission",
+            organization: "Penn State Yadav Lab",
+            period: "Oct 2024 – Jan 2026",
+            description: "Validated the Acceptability & Weighted Proximity (AWP) model to improve algorithmic recourse beyond standard proximity-based Counterfactual Explanations. Engineered evaluation pipelines modeling user-specific acceptability thresholds. Achieved 84% human preference prediction accuracy.",
+            publication: "Accepted to AAAI/ACM AIES-26",
             tech: ["Python", "Scikit-learn", "Counterfactual Explanations", "Algorithmic Recourse"]
+        },
+        pytorch_ignite: {
+            name: "pytorch/ignite — CharacterErrorRate (PR #3785)",
+            description: "Open source contribution: implemented CharacterErrorRate (CER) metric for ignite.metrics.nlp — standard NLP evaluation metric for ASR and OCR. 235 lines of implementation, 15 unit tests covering edge cases (empty strings, Unicode, batch aggregation), full Sphinx docs. Merged as PR #3785 and shipped in v0.5.2 of pytorch/ignite (5K+ stars).",
+            github: "github.com/pytorch/ignite/pull/3785",
+            tech: ["Python", "PyTorch", "pytest", "Sphinx"]
         },
         prompt_optima: {
             name: "Prompt Optima",
             role: "Core Developer",
             event: "HackHarvard 2024",
-            description: "Middleware platform that intelligently compresses LLM prompts by removing low-entropy tokens while preserving semantic intent. Achieved 60-95% token reduction.",
+            description: "Middleware platform that intelligently compresses LLM prompts by removing low-entropy tokens while preserving semantic intent. 60-95% token reduction depending on input redundancy.",
             tech: ["Next.js", "Python", "Gemini API", "Semantic Analysis"]
         },
         distributed_jbod: {
             name: "Distributed JBOD System",
             role: "Systems Architect",
-            description: "Architected a distributed storage system supporting network-mounted volumes with strict data integrity. Achieved 10x throughput over baseline via custom socket protocols and mutex synchronization.",
+            description: "Architected a distributed storage system supporting network-mounted volumes with strict data integrity. 10x throughput over single-lock baseline via custom socket protocols and mutex synchronization.",
             tech: ["C", "Pthreads", "Sockets", "Linux/Unix"]
         },
         healthcare: {
             name: "Healthcare Claims Adjudication",
-            description: "Production-ready healthcare claims adjudication system combining deterministic rules with LLM-based reasoning for ambiguous cases. Features RAG-powered retrieval and human-in-the-loop review.",
+            description: "Production-ready healthcare claims adjudication system combining deterministic rules with LLM-based reasoning for ambiguous cases. Features RAG-powered retrieval from historical claims and human-in-the-loop review UI.",
+            github: "github.com/Shubh3005/HealthcareAgent",
             tech: ["Python", "FastAPI", "React", "ChromaDB", "Docker"]
-        },
-        sf_analytics: {
-            name: "SF Urban Analytics Platform",
-            description: "Interactive mapping application for visualizing urban data with AI-powered insights and report generation.",
-            tech: ["React", "TypeScript", "Deck.gl", "MapLibre"]
-        },
-        skiniq: {
-            name: "SkinIQ",
-            description: "Cross-platform mobile application using ML-based image classification to detect skin types and provide personalized skincare routines.",
-            tech: ["TypeScript", "React", "Capacitor", "Supabase", "ML/CV"]
         }
     },
     availability: {
-        status: "Open to opportunities",
-        interests: ["AI Infrastructure", "Systems Engineering", "ML Platform Development", "Full-stack Development"],
-        work_type: ["Full-time", "Internships", "Research positions", "Consulting (project-dependent)"],
+        status: "AI Innovation Fellow @ Deloitte (Summer 2026) · Open to new grad roles — Jan 2027",
+        current: "Currently interning as AI Innovation Fellow at Deloitte for Summer 2026",
+        interests: ["AI Infrastructure", "Systems Engineering", "ML Platform Engineering", "Developer Tooling", "Full-stack AI"],
+        work_type: ["Full-time new grad roles (Jan 2027 start)", "Research positions"],
         response_time: "24-48 hours for emails, faster for LinkedIn"
     },
     philosophy: {
@@ -651,78 +665,112 @@ const QA_PATTERNS = [
         patterns: [/skill/i, /tech/i, /know/i, /proficient/i, /experience with/i, /work with/i, /languages/i, /programming/i],
         response: () => {
             const skills = SHUBHAM_KNOWLEDGE.skills;
-            return `Shubham's technical skills are organized by problem class:\n\n` +
-                `**AI Infrastructure:** ${skills.ai_infrastructure.slice(0, 5).join(", ")}, and more.\n\n` +
+            return `Shubham's technical skills by problem class:\n\n` +
+                `**AI/ML Infrastructure:** ${skills.ai_infrastructure.slice(0, 6).join(", ")}, and more.\n\n` +
+                `**Cloud & DevOps:** ${skills.cloud_infra.join(", ")}.\n\n` +
                 `**Core Systems:** ${skills.core_systems.slice(0, 5).join(", ")}, and more.\n\n` +
                 `**Full Stack:** ${skills.full_stack.slice(0, 5).join(", ")}, and more.\n\n` +
-                `**Research:** ${skills.research.join(", ")}.\n\n` +
-                `Check the <a href="skills.html">Skills page</a> for the complete list!`;
+                `Check the <a href="skills.html">Skills page</a> for the complete breakdown!`;
         }
     },
     {
-        patterns: [/research/i, /xai/i, /explainable/i, /awp/i, /counterfactual/i, /publication/i, /paper/i],
+        patterns: [/research/i, /xai/i, /explainable/i, /awp/i, /counterfactual/i, /publication/i, /paper/i, /aies/i, /thesis/i],
         response: () => {
             const r = SHUBHAM_KNOWLEDGE.projects.research;
-            return `Shubham is currently working as an **${r.role}** at **${r.organization}** (${r.period}).\n\n` +
-                `**Research Focus:** ${r.description}\n\n` +
-                `**Publication Status:** ${r.publication}\n\n` +
-                `**Tech Stack:** ${r.tech.join(", ")}`;
+            return `**${r.name}**\n\n` +
+                `**Role:** ${r.role} at ${r.organization} (${r.period})\n\n` +
+                `**Research:** ${r.description}\n\n` +
+                `**Publication:** ${r.publication}\n\n` +
+                `**Tech:** ${r.tech.join(", ")}`;
         }
     },
     {
-        patterns: [/project/i, /portfolio/i, /built/i, /created/i, /work/i, /made/i],
+        patterns: [/codebase/i, /semantic search/i, /faiss/i, /vector search/i, /repo search/i, /code search/i],
+        response: () => {
+            const p = SHUBHAM_KNOWLEDGE.projects.codebase;
+            return `**${p.name}** — Shubham's most recent project!\n\n` +
+                `**What it does:** ${p.description}\n\n` +
+                `**Tech Stack:** ${p.tech.join(", ")}\n\n` +
+                `Live: <a href="https://${p.live_url}" target="_blank">${p.live_url}</a> · ` +
+                `<a href="https://${p.github}" target="_blank">GitHub</a>`;
+        }
+    },
+    {
+        patterns: [/skiniq/i, /skin/i, /dermatology/i, /ham10000/i, /efficientnet/i, /skin condition/i],
+        response: () => {
+            const p = SHUBHAM_KNOWLEDGE.projects.skiniq;
+            return `**${p.name}** — Production ML product!\n\n` +
+                `**What it does:** ${p.description}\n\n` +
+                `**Tech Stack:** ${p.tech.join(", ")}\n\n` +
+                `Live: <a href="https://${p.live_url}" target="_blank">${p.live_url}</a> · ` +
+                `<a href="https://${p.github}" target="_blank">GitHub</a>`;
+        }
+    },
+    {
+        patterns: [/pytorch/i, /ignite/i, /open source/i, /character error/i, /cer/i, /pr #3785/i, /contribution/i],
+        response: () => {
+            const p = SHUBHAM_KNOWLEDGE.projects.pytorch_ignite;
+            return `**${p.name}**\n\n` +
+                `${p.description}\n\n` +
+                `**Tech:** ${p.tech.join(", ")}\n\n` +
+                `<a href="https://${p.github}" target="_blank">View merged PR on GitHub</a>`;
+        }
+    },
+    {
+        patterns: [/project/i, /portfolio/i, /built/i, /created/i, /made/i, /what have you/i],
         response: () => {
             const p = SHUBHAM_KNOWLEDGE.projects;
-            return `Here are some of Shubham's featured projects:\n\n` +
-                `1. **${p.research.name}** - XAI research at Penn State with 84% preference prediction accuracy\n\n` +
-                `2. **${p.prompt_optima.name}** - LLM prompt compression achieving 60-95% token reduction\n\n` +
-                `3. **${p.distributed_jbod.name}** - Distributed storage with 10x throughput improvement\n\n` +
-                `4. **${p.healthcare.name}** - Hybrid rules-engine + LLM for claims processing\n\n` +
-                `Visit the <a href="projects.html">Projects page</a> to see all 9 projects!`;
+            return `Here are Shubham's featured projects:\n\n` +
+                `1. **${p.codebase.name}** — AI codebase intelligence: semantic search + multi-repo analysis using FAISS & Groq LLaMA-3.3-70B. Live at ${p.codebase.live_url}\n\n` +
+                `2. **${p.skiniq.name}** — EfficientNet-B3 skin condition classifier (63% val accuracy, 7 classes), live in production at ${p.skiniq.live_url}\n\n` +
+                `3. **${p.research.name}** — 84% human preference prediction, accepted to AIES-26\n\n` +
+                `4. **${p.pytorch_ignite.name}** — Merged open source contribution to 5K-star repo, shipped in v0.5.2\n\n` +
+                `5. **${p.distributed_jbod.name}** — 10x throughput over baseline, built in C\n\n` +
+                `Visit the <a href="projects.html">Projects page</a> to see all 8 projects!`;
         }
     },
     {
-        patterns: [/education/i, /school/i, /university/i, /degree/i, /study/i, /college/i, /penn state/i, /gpa/i, /major/i],
+        patterns: [/education/i, /school/i, /university/i, /degree/i, /study/i, /college/i, /penn state/i, /major/i],
         response: () => {
             const e = SHUBHAM_KNOWLEDGE.education;
             return `**Education:**\n\n` +
-                `🎓 **${e.university}** - ${e.honors}\n\n` +
-                `📚 ${e.degree}, Minor in ${e.minor}\n\n` +
-                `📅 Expected Graduation: ${e.graduation}\n\n` +
-                `Shubham is currently a student while also conducting research in Explainable AI.`;
+                `**${e.university}** — ${e.honors}\n\n` +
+                `${e.degree}, Minor in ${e.minor}\n\n` +
+                `Expected Graduation: ${e.graduation}\n\n` +
+                `${e.status}`;
         }
     },
     {
-        patterns: [/available/i, /hire/i, /hiring/i, /job/i, /opportunity/i, /position/i, /open to/i, /looking for/i, /intern/i, /work/i],
+        patterns: [/available/i, /hire/i, /hiring/i, /job/i, /opportunity/i, /position/i, /open to/i, /looking for/i, /intern/i, /deloitte/i, /fellowship/i],
         response: () => {
             const a = SHUBHAM_KNOWLEDGE.availability;
-            return `**Availability:** ${a.status}! ✅\n\n` +
+            return `**Current Status:** ${a.current}\n\n` +
+                `**After Summer 2026:** ${a.work_type[0]}\n\n` +
                 `**Interested in:** ${a.interests.join(", ")}\n\n` +
-                `**Open to:** ${a.work_type.join(", ")}\n\n` +
                 `**Response time:** ${a.response_time}\n\n` +
-                `Feel free to reach out via the contact form above or connect on <a href="https://linkedin.com/in/shubhgupta7049" target="_blank">LinkedIn</a>!`;
+                `Reach out via the <a href="contact.html">contact page</a> or <a href="https://linkedin.com/in/shubhgupta7049" target="_blank">LinkedIn</a>!`;
         }
     },
     {
         patterns: [/contact/i, /reach/i, /email/i, /linkedin/i, /github/i, /connect/i, /touch/i],
         response: () => {
             const p = SHUBHAM_KNOWLEDGE.personal;
-            return `**Contact Information:**\n\n` +
-                `📧 Email: <a href="mailto:${p.email}">${p.email}</a>\n\n` +
-                `💼 LinkedIn: <a href="https://${p.linkedin}" target="_blank">${p.linkedin}</a>\n\n` +
-                `💻 GitHub: <a href="https://${p.github}" target="_blank">${p.github}</a>\n\n` +
-                `📍 Location: ${p.location}\n\n` +
-                `You can also use the contact form above to send a direct message!`;
+            return `**Contact Shubham:**\n\n` +
+                `Email: <a href="mailto:${p.email}">${p.email}</a>\n\n` +
+                `LinkedIn: <a href="https://${p.linkedin}" target="_blank">${p.linkedin}</a>\n\n` +
+                `GitHub: <a href="https://${p.github}" target="_blank">${p.github}</a>\n\n` +
+                `Or use the contact form on the <a href="contact.html">contact page</a>!`;
         }
     },
     {
         patterns: [/who/i, /about/i, /tell me about/i, /introduce/i, /yourself/i, /shubham/i, /background/i],
         response: () => {
             const p = SHUBHAM_KNOWLEDGE.personal;
-            return `**${p.name}** - ${p.role}\n\n` +
+            const a = SHUBHAM_KNOWLEDGE.availability;
+            return `**${p.name}** — ${p.role}\n\n` +
                 `*"${p.tagline}"*\n\n` +
                 `${p.identity}\n\n` +
-                `Currently studying at **Penn State (Schreyer Honors College)** while conducting Explainable AI research.\n\n` +
+                `Currently: **${p.current_role}**. CS senior at Penn State Schreyer Honors College (Dec 2026).\n\n` +
                 `Learn more on the <a href="about.html">About page</a>!`;
         }
     },
@@ -738,24 +786,23 @@ const QA_PATTERNS = [
         }
     },
     {
-        patterns: [/distributed/i, /jbod/i, /storage/i, /systems/i, /throughput/i, /c programming/i, /socket/i],
+        patterns: [/distributed/i, /jbod/i, /storage/i, /throughput/i, /c programming/i, /socket/i, /pthreads/i],
         response: () => {
             const p = SHUBHAM_KNOWLEDGE.projects.distributed_jbod;
             return `**${p.name}**\n\n` +
                 `**Role:** ${p.role}\n\n` +
                 `**Description:** ${p.description}\n\n` +
-                `**Tech Stack:** ${p.tech.join(", ")}\n\n` +
-                `This project demonstrates deep systems programming expertise!`;
+                `**Tech Stack:** ${p.tech.join(", ")}`;
         }
     },
     {
-        patterns: [/philosophy/i, /approach/i, /believe/i, /think/i, /mindset/i, /values/i],
+        patterns: [/philosophy/i, /approach/i, /believe/i, /mindset/i, /values/i],
         response: () => {
             const ph = SHUBHAM_KNOWLEDGE.philosophy;
             return `**Shubham's Engineering Philosophy:**\n\n` +
-                `🧩 **Systems First:** ${ph.systems_first}\n\n` +
-                `⚖️ **Responsible AI:** ${ph.responsible_ai}\n\n` +
-                `⚡ **Efficiency Obsessed:** ${ph.efficiency}`;
+                `**Systems First:** ${ph.systems_first}\n\n` +
+                `**Responsible AI:** ${ph.responsible_ai}\n\n` +
+                `**Efficiency:** ${ph.efficiency}`;
         }
     },
     {
@@ -765,7 +812,7 @@ const QA_PATTERNS = [
             return `**${p.name}**\n\n` +
                 `**Description:** ${p.description}\n\n` +
                 `**Tech Stack:** ${p.tech.join(", ")}\n\n` +
-                `<a href="https://github.com/Shubh3005/HealthcareAgent" target="_blank">View on GitHub</a>`;
+                `<a href="https://${p.github}" target="_blank">View on GitHub</a>`;
         }
     }
 ];

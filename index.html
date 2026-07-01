@@ -120,10 +120,16 @@
                         I don't just train models—I build the plumbing that makes them viable:
                         infrastructure, cost-efficiency, and reliability at scale.
                     </p>
-                    <p class="availability-badge">
-                        <i class="fas fa-calendar-check"></i>
-                        <span>Open to new grad roles — January 2027 start</span>
-                    </p>
+                    <div style="display:flex;flex-direction:column;gap:0.5rem;margin-bottom:1.5rem;align-items:flex-start;">
+                        <p class="availability-badge" style="margin-bottom:0">
+                            <i class="fas fa-building"></i>
+                            <span>AI Innovation Fellow @ Deloitte — Summer 2026</span>
+                        </p>
+                        <p class="availability-badge" style="margin-bottom:0">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Open to new grad roles — Jan 2027</span>
+                        </p>
+                    </div>
                     <div class="hero-cta">
                         <a href="projects.html" class="btn btn-primary">
                             <span class="btn-icon">▶</span>
@@ -135,22 +141,24 @@
                         </a>
                     </div>
                     <div class="hero-stats data-pending">
-                        <div class="stat-item" title="EfficientNet-B3 fine-tuned on HAM10000 — deployed to production">
+                        <div class="stat-item" title="EfficientNet-B3 fine-tuned on HAM10000 — 0.66 macro F1 · 4.6× random baseline — SkinIQ">
                             <span class="stat-value" data-portfolio-skiniq-val-accuracy>63%</span>
                             <span class="stat-label">Val Accuracy</span>
-                            <span class="stat-context">0.66 macro F1 · 4.6× random — SkinIQ</span>
                         </div>
                         <div class="stat-divider"></div>
-                        <div class="stat-item" title="AWP model preference prediction accuracy in XAI research — AIES-26">
+                        <div class="stat-item" title="AWP model preference prediction accuracy in XAI research — Accepted to AIES-26">
                             <span class="stat-value" data-portfolio-aies26-preference-accuracy>84%</span>
                             <span class="stat-label">Preference Prediction</span>
-                            <span class="stat-context">84% human preference — Accepted to AIES-26</span>
                         </div>
                         <div class="stat-divider"></div>
-                        <div class="stat-item" title="Distributed JBOD storage system with custom socket protocols">
+                        <div class="stat-item" title="Distributed JBOD storage system — vs. single-lock baseline · C, pthreads">
                             <span class="stat-value">10x</span>
                             <span class="stat-label">Throughput Gains</span>
-                            <span class="stat-context">vs. single-lock baseline — C, pthreads</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item" title="Merged PR #3785 — CharacterErrorRate for ignite.metrics.nlp — pytorch/ignite (5K⭐) · shipped in v0.5.2">
+                            <span class="stat-value">PR #3785</span>
+                            <span class="stat-label">pytorch/ignite</span>
                         </div>
                     </div>
                 </div>
@@ -226,7 +234,7 @@
             </div>
         </section>
 
-        <!-- Featured Project Highlight — updated to SkinIQ -->
+        <!-- Featured Project Highlight — CodeBase -->
         <section class="section featured-highlight">
             <div class="container">
                 <div class="section-header">
@@ -235,53 +243,54 @@
                 </div>
                 <div class="featured-project">
                     <div class="featured-content">
-                        <div class="project-signal ml-app">
-                            <span class="signal-label">ML DEPLOYMENT — LIVE IN PRODUCTION</span>
+                        <div class="project-signal data-viz">
+                            <span class="signal-label">AI DEVELOPER TOOLING — LIVE IN PRODUCTION</span>
                         </div>
-                        <h3 class="project-title">SkinIQ — A Dermatologist in Your Pocket</h3>
-                        <p class="project-oneliner">From model training to production — end-to-end ML deployment.</p>
+                        <h3 class="project-title">CodeBase — AI-Powered Codebase Intelligence</h3>
+                        <p class="project-oneliner">Semantic search over any GitHub repo — understand any codebase in seconds.</p>
 
                         <div class="research-meta">
                             <p class="research-advisor">
                                 <i class="fas fa-globe"></i>
-                                <span>Live at <a href="https://skin-iq.vercel.app" target="_blank" style="text-decoration:underline">skin-iq.vercel.app</a></span>
+                                <span>Live at <a href="https://codebase-frontend.vercel.app" target="_blank" style="text-decoration:underline">codebase-frontend.vercel.app</a></span>
                             </p>
                             <p class="research-status">
                                 <i class="fas fa-check-circle"></i>
-                                <span>EfficientNet-B3 · HAM10000 · Railway + HuggingFace Hub · Vercel</span>
+                                <span>sentence-transformers + FAISS · Groq LLaMA-3.3-70B · AWS DynamoDB/S3 · Vercel</span>
                             </p>
                         </div>
 
                         <p class="project-description">
-                            Fine-tuned EfficientNet-B3 on HAM10000 (10k dermoscopy images, 7 skin condition classes)
-                            with weighted loss and WeightedRandomSampler to handle a 58:1 class imbalance.
-                            Deployed a Dockerized FastAPI inference server on Railway — model weights auto-downloaded
-                            from HuggingFace Hub on startup. React/Vite frontend on Vercel with Supabase for auth,
-                            Row Level Security, and scan history. Full product: scan, track, and visualize your skin health.
+                            Indexes any GitHub repository into a semantic vector store — ask natural-language questions
+                            and get grounded, code-aware answers. Multi-repo comparison with side-by-side architectural
+                            analysis lets you benchmark codebases against each other. Embeddings stored in FAISS,
+                            metadata in AWS DynamoDB, raw files in S3. Groq LLaMA-3.3-70B drives inference for
+                            sub-second response times at scale.
                         </p>
 
                         <div class="research-finding">
-                            <span class="finding-label">Model:</span>
-                            <span class="finding-value">63% val accuracy · macro F1 0.66 · 7-class skin condition classification</span>
+                            <span class="finding-label">Stack:</span>
+                            <span class="finding-value">FastAPI · FAISS · sentence-transformers · AWS DynamoDB/S3 · Groq LLaMA-3.3-70B · Next.js · Vercel</span>
                         </div>
 
                         <div class="tech-stack">
-                            <span class="tech-tag">EfficientNet-B3</span>
-                            <span class="tech-tag">PyTorch</span>
                             <span class="tech-tag">FastAPI</span>
-                            <span class="tech-tag">HuggingFace Hub</span>
-                            <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">Supabase</span>
-                            <span class="tech-tag">Railway</span>
+                            <span class="tech-tag">FAISS</span>
+                            <span class="tech-tag">sentence-transformers</span>
+                            <span class="tech-tag">AWS DynamoDB</span>
+                            <span class="tech-tag">AWS S3</span>
+                            <span class="tech-tag">Groq LLaMA-3.3-70B</span>
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">Vercel</span>
                         </div>
                         <div class="research-cta">
-                            <a href="https://skin-iq.vercel.app" target="_blank" class="btn btn-primary">
+                            <a href="https://codebase-frontend.vercel.app" target="_blank" class="btn btn-primary">
                                 <span>Live Demo</span>
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
-                            <a href="projects.html" class="btn btn-secondary" style="margin-left:12px">
-                                <span>All Projects</span>
-                                <i class="fas fa-arrow-right"></i>
+                            <a href="https://github.com/Shubh3005/CodeBase" target="_blank" class="btn btn-secondary" style="margin-left:12px">
+                                <span>View Source</span>
+                                <i class="fab fa-github"></i>
                             </a>
                         </div>
                     </div>
@@ -293,17 +302,18 @@
                                 <span class="terminal-dot green"></span>
                             </div>
                             <div class="code-body">
-                                <pre><code><span class="code-keyword">POST</span> <span class="code-function">/predict</span>
-<span class="code-key">image</span>: base64_encoded_photo
+                                <pre><code><span class="code-keyword">POST</span> <span class="code-function">/search</span>
+<span class="code-key">repo</span>: <span class="code-value">"github.com/user/repo"</span>
+<span class="code-key">query</span>: <span class="code-value">"how is auth handled?"</span>
 
-<span class="code-comment"># EfficientNet-B3 inference</span>
-<span class="code-comment"># weights: HuggingFace Hub</span>
-<span class="code-comment"># deploy: Railway + Docker</span>
+<span class="code-comment"># sentence-transformers embed</span>
+<span class="code-comment"># FAISS ANN search</span>
+<span class="code-comment"># Groq LLaMA-3.3-70B answer</span>
 
 {
-  <span class="code-key">"disease"</span>: <span class="code-value">"Melanocytic Nevus"</span>,
-  <span class="code-key">"clinicalUrgency"</span>: <span class="code-value">"Low"</span>,
-  <span class="code-key">"confidence"</span>: <span class="code-value">0.847</span>
+  <span class="code-key">"answer"</span>: <span class="code-value">"JWT via middleware..."</span>,
+  <span class="code-key">"sources"</span>: [<span class="code-value">"auth.py:42"</span>],
+  <span class="code-key">"latency_ms"</span>: <span class="code-value">312</span>
 }</code></pre>
                             </div>
                         </div>
