@@ -27,7 +27,7 @@
   ],
   "github": {
     "commit_streak": 0,
-    "contributions_30d": 85,
+    "contributions_30d": 80,
     "pinned_repos": [
       {
         "description": "",
@@ -49,7 +49,7 @@
         "description": "",
         "name": "Personal-Website",
         "primary_language": "HTML",
-        "pushed_at": "2026-07-03T05:40:55Z",
+        "pushed_at": "2026-07-04T05:34:21Z",
         "stars": 0,
         "url": "https://github.com/Shubh3005/Personal-Website"
       },
@@ -80,20 +80,20 @@
     ],
     "recent_repos": [
       {
+        "description": "",
+        "name": "Personal-Website",
+        "primary_language": "HTML",
+        "pushed_at": "2026-07-04T05:34:21Z",
+        "stars": 0,
+        "url": "https://github.com/Shubh3005/Personal-Website"
+      },
+      {
         "description": "My NeetCode.io problem submissions",
         "name": "neetcode-submissions-qktoerfl",
         "primary_language": "Python",
         "pushed_at": "2026-07-04T03:16:00Z",
         "stars": 0,
         "url": "https://github.com/Shubh3005/neetcode-submissions-qktoerfl"
-      },
-      {
-        "description": "",
-        "name": "Personal-Website",
-        "primary_language": "HTML",
-        "pushed_at": "2026-07-03T05:40:55Z",
-        "stars": 0,
-        "url": "https://github.com/Shubh3005/Personal-Website"
       },
       {
         "description": "",
@@ -120,9 +120,9 @@
         "url": "https://github.com/Shubh3005/HealthcareAgent"
       }
     ],
-    "total_repos": 78
+    "total_repos": 79
   },
-  "last_updated": "2026-07-04T05:34:20Z",
+  "last_updated": "2026-07-05T05:52:47Z",
   "projects": {
     "ftc_analyzer": {
       "mAP": 0.949,
