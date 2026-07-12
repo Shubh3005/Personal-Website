@@ -27,7 +27,7 @@
   ],
   "github": {
     "commit_streak": 0,
-    "contributions_30d": 67,
+    "contributions_30d": 65,
     "pinned_repos": [
       {
         "description": "",
@@ -49,7 +49,7 @@
         "description": "",
         "name": "Personal-Website",
         "primary_language": "HTML",
-        "pushed_at": "2026-07-10T05:50:50Z",
+        "pushed_at": "2026-07-11T04:51:07Z",
         "stars": 0,
         "url": "https://github.com/Shubh3005/Personal-Website"
       },
@@ -80,20 +80,20 @@
     ],
     "recent_repos": [
       {
+        "description": "",
+        "name": "Personal-Website",
+        "primary_language": "HTML",
+        "pushed_at": "2026-07-11T04:51:07Z",
+        "stars": 0,
+        "url": "https://github.com/Shubh3005/Personal-Website"
+      },
+      {
         "description": "My NeetCode.io problem submissions",
         "name": "neetcode-submissions-qktoerfl",
         "primary_language": "Python",
         "pushed_at": "2026-07-11T01:06:28Z",
         "stars": 0,
         "url": "https://github.com/Shubh3005/neetcode-submissions-qktoerfl"
-      },
-      {
-        "description": "",
-        "name": "Personal-Website",
-        "primary_language": "HTML",
-        "pushed_at": "2026-07-10T05:50:50Z",
-        "stars": 0,
-        "url": "https://github.com/Shubh3005/Personal-Website"
       },
       {
         "description": "",
@@ -120,9 +120,9 @@
         "url": "https://github.com/Shubh3005/codebase-frontend"
       }
     ],
-    "total_repos": 80
+    "total_repos": 81
   },
-  "last_updated": "2026-07-11T04:51:06Z",
+  "last_updated": "2026-07-12T05:13:34Z",
   "projects": {
     "ftc_analyzer": {
       "mAP": 0.949,
