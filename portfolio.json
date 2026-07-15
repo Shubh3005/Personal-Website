@@ -27,7 +27,7 @@
   ],
   "github": {
     "commit_streak": 0,
-    "contributions_30d": 61,
+    "contributions_30d": 59,
     "pinned_repos": [
       {
         "description": "",
@@ -49,7 +49,7 @@
         "description": "",
         "name": "Personal-Website",
         "primary_language": "HTML",
-        "pushed_at": "2026-07-13T05:22:27Z",
+        "pushed_at": "2026-07-14T04:37:40Z",
         "stars": 0,
         "url": "https://github.com/Shubh3005/Personal-Website"
       },
@@ -81,9 +81,17 @@
     "recent_repos": [
       {
         "description": "",
+        "name": "codebook-compliance-thesis",
+        "primary_language": "Python",
+        "pushed_at": "2026-07-14T12:31:42Z",
+        "stars": 0,
+        "url": "https://github.com/Shubh3005/codebook-compliance-thesis"
+      },
+      {
+        "description": "",
         "name": "Personal-Website",
         "primary_language": "HTML",
-        "pushed_at": "2026-07-13T05:22:27Z",
+        "pushed_at": "2026-07-14T04:37:40Z",
         "stars": 0,
         "url": "https://github.com/Shubh3005/Personal-Website"
       },
@@ -94,14 +102,6 @@
         "pushed_at": "2026-07-11T01:06:28Z",
         "stars": 0,
         "url": "https://github.com/Shubh3005/neetcode-submissions-qktoerfl"
-      },
-      {
-        "description": "",
-        "name": "codebook-compliance-thesis",
-        "primary_language": "Python",
-        "pushed_at": "2026-07-07T09:31:32Z",
-        "stars": 0,
-        "url": "https://github.com/Shubh3005/codebook-compliance-thesis"
       },
       {
         "description": "",
@@ -122,7 +122,7 @@
     ],
     "total_repos": 81
   },
-  "last_updated": "2026-07-14T04:37:40Z",
+  "last_updated": "2026-07-15T04:37:45Z",
   "projects": {
     "ftc_analyzer": {
       "mAP": 0.949,
