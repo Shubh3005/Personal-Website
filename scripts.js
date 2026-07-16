@@ -296,40 +296,48 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // ============================================
 const filterBtns = document.querySelectorAll('.filter-btn');
 const projectCards = document.querySelectorAll('.project-card');
+const sectionDividers = document.querySelectorAll('.project-section-divider');
+
+function applyFilter(filter) {
+    projectCards.forEach(card => {
+        const categories = card.dataset.category || '';
+
+        if (filter === 'all') {
+            card.style.display = 'block';
+            card.style.animation = 'fadeInUp 0.5s ease-out forwards';
+        } else if (filter === 'featured') {
+            if (card.classList.contains('featured')) {
+                card.style.display = 'block';
+                card.style.animation = 'fadeInUp 0.5s ease-out forwards';
+            } else {
+                card.style.display = 'none';
+            }
+        } else {
+            if (categories.includes(filter)) {
+                card.style.display = 'block';
+                card.style.animation = 'fadeInUp 0.5s ease-out forwards';
+            } else {
+                card.style.display = 'none';
+            }
+        }
+    });
+
+    sectionDividers.forEach(div => {
+        const showIn = (div.dataset.showIn || '').split(' ');
+        div.style.display = showIn.includes(filter) ? 'flex' : 'none';
+    });
+}
 
 if (filterBtns.length > 0 && projectCards.length > 0) {
     filterBtns.forEach(btn => {
         btn.addEventListener('click', function() {
-            // Update active button
             filterBtns.forEach(b => b.classList.remove('active'));
             this.classList.add('active');
-            
-            const filter = this.dataset.filter;
-            
-            projectCards.forEach(card => {
-                const categories = card.dataset.category || '';
-                
-                if (filter === 'all') {
-                    card.style.display = 'block';
-                    card.style.animation = 'fadeInUp 0.5s ease-out forwards';
-                } else if (filter === 'featured') {
-                    if (card.classList.contains('featured')) {
-                        card.style.display = 'block';
-                        card.style.animation = 'fadeInUp 0.5s ease-out forwards';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                } else {
-                    if (categories.includes(filter)) {
-                        card.style.display = 'block';
-                        card.style.animation = 'fadeInUp 0.5s ease-out forwards';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                }
-            });
+            applyFilter(this.dataset.filter);
         });
     });
+
+    applyFilter('featured');
 }
 
 // ============================================

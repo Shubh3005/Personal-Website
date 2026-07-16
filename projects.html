@@ -77,14 +77,21 @@
         <section class="section projects-page">
             <div class="container">
                 <div class="projects-filter">
-                    <button class="filter-btn active" data-filter="all">All Projects</button>
-                    <button class="filter-btn" data-filter="featured">Featured</button>
+                    <button class="filter-btn active" data-filter="featured">Featured</button>
+                    <button class="filter-btn" data-filter="all">All</button>
                     <button class="filter-btn" data-filter="ai">AI/ML</button>
                     <button class="filter-btn" data-filter="systems">Systems</button>
                     <button class="filter-btn" data-filter="fullstack">Applications</button>
+                    <button class="filter-btn" data-filter="opensource">Open Source</button>
                 </div>
 
                 <div class="projects-showcase">
+
+                    <!-- Section: Featured -->
+                    <div class="project-section-divider" data-show-in="all" style="display:none">
+                        <span class="divider-label">// Featured</span>
+                        <span class="divider-line"></span>
+                    </div>
 
                     <!-- Project: CodeBase — Developer Intelligence Signal -->
                     <div class="project-card featured" data-category="featured ai fullstack">
@@ -313,53 +320,8 @@
                         </div>
                     </div>
 
-                    <!-- Project E: AI Infrastructure Signal -->
-                    <div class="project-card featured" data-category="featured ai fullstack">
-                        <div class="project-signal infrastructure">
-                            <span class="signal-label">THE AI INFRASTRUCTURE SIGNAL</span>
-                        </div>
-                        <div class="project-header">
-                            <div class="project-icon">
-                                <i class="fas fa-heartbeat"></i>
-                            </div>
-                            <div class="project-meta">
-                                <span class="project-role">Full Stack Developer</span>
-                            </div>
-                        </div>
-                        <h3 class="project-title">Healthcare Claims Adjudication</h3>
-                        <p class="project-oneliner">Hybrid rules-engine + LLM system for claims processing.</p>
-                        <p class="project-description">
-                            A production-ready healthcare claims adjudication system combining deterministic rules
-                            with LLM-based reasoning for ambiguous cases. Features RAG-powered retrieval from
-                            historical claims, human-in-the-loop review UI, and comprehensive audit logging
-                            with decision explanations.
-                        </p>
-                        <div class="project-metrics">
-                            <div class="metric">
-                                <span class="metric-value">Hybrid</span>
-                                <span class="metric-label">Rules + LLM Architecture</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">RAG</span>
-                                <span class="metric-label">Vector DB Integration</span>
-                            </div>
-                        </div>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">FastAPI</span>
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">ChromaDB</span>
-                            <span class="tech-tag">Docker</span>
-                        </div>
-                        <div class="project-footer">
-                            <a href="https://github.com/Shubh3005/HealthcareAgent" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> View Source
-                            </a>
-                        </div>
-                    </div>
-
                     <!-- Project F: Real-time CV Signal -->
-                    <div class="project-card featured" data-category="featured ai fullstack">
+                    <div class="project-card featured" data-category="featured ai fullstack systems">
                         <div class="project-signal cv-signal">
                             <span class="signal-label">THE REAL-TIME CV SIGNAL</span>
                         </div>
@@ -403,8 +365,65 @@
 
 
 
+                    <!-- Section divider: More Projects -->
+                    <div class="project-section-divider" data-show-in="all ai fullstack" style="display:none">
+                        <span class="divider-label">// More Projects</span>
+                        <span class="divider-line"></span>
+                    </div>
+
+                    <!-- Project E: AI Infrastructure Signal -->
+                    <div class="project-card" data-category="ai fullstack">
+                        <div class="project-signal infrastructure">
+                            <span class="signal-label">THE AI INFRASTRUCTURE SIGNAL</span>
+                        </div>
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <div class="project-meta">
+                                <span class="project-role">Full Stack Developer</span>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Healthcare Claims Adjudication</h3>
+                        <p class="project-oneliner">Hybrid rules-engine + LLM system for claims processing.</p>
+                        <p class="project-description">
+                            A production-ready healthcare claims adjudication system combining deterministic rules
+                            with LLM-based reasoning for ambiguous cases. Features RAG-powered retrieval from
+                            historical claims, human-in-the-loop review UI, and comprehensive audit logging
+                            with decision explanations.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">Hybrid</span>
+                                <span class="metric-label">Rules + LLM Architecture</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">RAG</span>
+                                <span class="metric-label">Vector DB Integration</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">ChromaDB</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Shubh3005/HealthcareAgent" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Source
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Section divider: Open Source -->
+                    <div class="project-section-divider" data-show-in="all opensource" style="display:none">
+                        <span class="divider-label">// Open Source</span>
+                        <span class="divider-line"></span>
+                    </div>
+
                     <!-- Open Source: pytorch/ignite PR #3785 -->
-                    <div class="project-card featured" data-category="featured ai">
+                    <div class="project-card" data-category="opensource ai">
                         <div class="project-signal automation">
                             <span class="signal-label">THE OPEN SOURCE SIGNAL</span>
                         </div>
@@ -424,7 +443,7 @@
                             NLP evaluation metric for ASR and OCR systems. 235 lines of implementation across
                             source + tests, 15 unit tests covering edge cases (empty strings, Unicode, batch
                             aggregation), and full Sphinx documentation matching library standards.
-                            Merged as PR #3785 and shipped in the v0.5.2 release of pytorch/ignite (5K+ GitHub stars).
+                            Merged as PR #3785 and shipped in the v0.5.2 release of pytorch/ignite (5.1K+ GitHub stars).
                         </p>
                         <div class="project-metrics">
                             <div class="metric">
@@ -446,6 +465,49 @@
                         <div class="project-footer">
                             <a href="https://github.com/pytorch/ignite/pull/3785" target="_blank" class="project-link">
                                 <i class="fab fa-github"></i> PR #3785
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Open Source: sentence-transformers PR #3856 -->
+                    <div class="project-card" data-category="opensource ai">
+                        <div class="project-signal automation">
+                            <span class="signal-label">THE OPEN SOURCE SIGNAL</span>
+                        </div>
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="project-meta">
+                                <span class="project-role">Open Source Contributor</span>
+                                <span class="project-award"><i class="fas fa-hourglass-half"></i> Under Review </span>
+                            </div>
+                        </div>
+                        <h3 class="project-title">sentence-transformers — Docs PR #3856</h3>
+                        <p class="project-oneliner">Documentation contribution to sentence-transformers (18.9K⭐) — under review.</p>
+                        <p class="project-description">
+                            Documentation improvement PR to UKPLab/sentence-transformers — the standard Python library
+                            for state-of-the-art sentence, text, and image embeddings. PR #3856 adds clarity for
+                            practitioners working with fine-tuning workflows and embedding-based retrieval pipelines.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">18.9K⭐</span>
+                                <span class="metric-label">GitHub Stars</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">#3856</span>
+                                <span class="metric-label">Under Review</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">sentence-transformers</span>
+                            <span class="tech-tag">Documentation</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/UKPLab/sentence-transformers/pull/3856" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> PR #3856
                             </a>
                         </div>
                     </div>

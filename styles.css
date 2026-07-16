@@ -2286,6 +2286,35 @@ nav.scrolled {
     background: rgba(34, 211, 238, 0.1);
 }
 
+.project-section-divider {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    margin-top: 1.5rem;
+}
+
+.project-section-divider .divider-label {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--accent-primary);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 4px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background: var(--bg-card);
+}
+
+.project-section-divider .divider-line {
+    flex: 1;
+    height: 1px;
+    background: var(--border-color);
+}
+
 .github-cta {
     text-align: center;
     padding: 3rem 0;
