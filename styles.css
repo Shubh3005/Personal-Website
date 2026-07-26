@@ -3378,11 +3378,32 @@ nav.scrolled {
     .featured-project {
         padding: 1.25rem;
     }
-    
+
     .featured-content {
         padding: 0;
+        text-align: center;
     }
-    
+
+    .featured-content .tech-stack {
+        justify-content: center;
+    }
+
+    .featured-content .research-cta {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+    }
+
+    .featured-content .research-cta .btn {
+        margin-left: 0 !important;
+    }
+
+    .featured-content .project-signal {
+        display: block;
+        text-align: center;
+    }
+
     .project-title {
         font-size: 1.25rem;
     }
