@@ -93,10 +93,14 @@
                         <span class="divider-line"></span>
                     </div>
 
+<<<<<<< HEAD
                     <!-- Project: CodeBase — Developer Intelligence Signal -->
+=======
+                    <!-- Project: CodeBase — AI Developer Tooling Signal -->
+>>>>>>> 5dcc522 (Update personal website)
                     <div class="project-card featured" data-category="featured ai fullstack">
                         <div class="project-signal data-viz">
-                            <span class="signal-label">THE DEVELOPER INTELLIGENCE SIGNAL</span>
+                            <span class="signal-label">THE AI DEVELOPER TOOLING SIGNAL</span>
                         </div>
                         <div class="project-header">
                             <div class="project-icon">
@@ -107,23 +111,26 @@
                                 <span class="project-award"><i class="fas fa-globe"></i> Live in Production</span>
                             </div>
                         </div>
-                        <h3 class="project-title">CodeBase</h3>
+                        <h3 class="project-title">CodeBase — AI-Powered Codebase Intelligence</h3>
                         <p class="project-oneliner">Semantic search over any GitHub repo — understand any codebase in seconds.</p>
                         <p class="project-description">
-                            Indexes any GitHub repository into a semantic vector store — ask natural-language questions
+                            Indexes any GitHub repository into a FAISS vector store — ask natural-language questions
                             and get grounded, code-aware answers. Multi-repo comparison with side-by-side architectural
-                            analysis lets you benchmark codebases against each other. Embeddings stored in FAISS,
-                            metadata in AWS DynamoDB, raw files in S3. Groq LLaMA-3.3-70B drives inference for
-                            sub-second response times at scale.
+                            analysis. Embeddings in FAISS, metadata in AWS DynamoDB, raw files in S3. Groq LLaMA-3.3-70B
+                            drives inference for sub-second response times.
                         </p>
                         <div class="project-metrics">
                             <div class="metric">
-                                <span class="metric-value">Semantic</span>
-                                <span class="metric-label">FAISS Vector Search</span>
+                                <span class="metric-value">Sub-second</span>
+                                <span class="metric-label">Inference</span>
                             </div>
                             <div class="metric">
                                 <span class="metric-value">Multi-repo</span>
-                                <span class="metric-label">Side-by-side Analysis</span>
+                                <span class="metric-label">Comparison</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">AWS + FAISS</span>
+                                <span class="metric-label">Backend</span>
                             </div>
                         </div>
                         <div class="tech-stack">
@@ -279,6 +286,57 @@
                             <span class="tech-tag">Scikit-learn</span>
                             <span class="tech-tag">Counterfactual Explanations</span>
                             <span class="tech-tag">Algorithmic Recourse</span>
+                        </div>
+                    </div>
+
+                    <!-- Project: Thesis Research — Research Signal -->
+                    <div class="project-card featured" data-category="featured ai">
+                        <div class="project-signal responsibility">
+                            <span class="signal-label">THE RESEARCH SIGNAL</span>
+                        </div>
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                            <div class="project-meta">
+                                <span class="project-role">Honors Thesis Researcher</span>
+                                <span class="project-institution">Penn State Schreyer · Targeting AISI 2027</span>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Codebook Compliance Audit — LLM Behavioral Diagnostics</h3>
+                        <p class="project-oneliner">Do LLMs apply codebook definitions, or just pattern-match on label names?</p>
+                        <p class="project-description">
+                            Built a counterfactual behavioral diagnostic to test whether LLMs genuinely apply codebook
+                            definitions when classifying political text, or pattern-match on label names. Novel three-way
+                            decomposition attributes each prediction to definition compliance, label-name compliance, or
+                            surface-feature matching. Applied to three datasets (CCC, BFRS, Manifestos) across 12
+                            experimental conditions. Key finding: RAG improves accuracy but worsens definition compliance
+                            monotonically. Compliance-penalty fine-tuning achieves statistically significant compliance
+                            improvement (p&lt;0.001).
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">3 datasets</span>
+                                <span class="metric-label">12 Conditions</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">AISI 2027</span>
+                                <span class="metric-label">Target Venue</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Mistral-7B</span>
+                            <span class="tech-tag">LoRA</span>
+                            <span class="tech-tag">FAISS</span>
+                            <span class="tech-tag">RAG</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">HuggingFace PEFT/TRL</span>
+                            <span class="tech-tag">Penn State ICDS HPC</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Shubh3005/codebook-compliance-thesis" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Source
+                            </a>
                         </div>
                     </div>
 

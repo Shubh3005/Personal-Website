@@ -7,9 +7,15 @@
       "status": "active"
     },
     {
-      "last_updated": "2026-06-02",
-      "one_liner": "Studying model preference prediction and compliance scoring for responsible AI systems on PSU ICDS HPC.",
-      "project_name": "Thesis \u2014 XAI Alignment",
+      "last_updated": "2026-07-24",
+      "one_liner": "Codebook Compliance Audit \u2014 LLM behavioral diagnostics thesis targeting AISI 2027. Completing December 2026 through Penn State Schreyer Honors College.",
+      "project_name": "Honors Thesis \u2014 Targeting AISI 2027",
+      "status": "active"
+    },
+    {
+      "last_updated": "2026-07-24",
+      "one_liner": "AI Innovation Fellow at Deloitte \u2014 building production AI systems and infrastructure.",
+      "project_name": "Deloitte AI Innovation Fellowship",
       "status": "active"
     },
     {
@@ -27,7 +33,11 @@
   ],
   "github": {
     "commit_streak": 0,
+<<<<<<< HEAD
     "contributions_30d": 40,
+=======
+    "contributions_30d": 59,
+>>>>>>> 5dcc522 (Update personal website)
     "pinned_repos": [
       {
         "description": "",
@@ -49,7 +59,11 @@
         "description": "",
         "name": "Personal-Website",
         "primary_language": "HTML",
+<<<<<<< HEAD
         "pushed_at": "2026-07-24T04:57:57Z",
+=======
+        "pushed_at": "2026-07-15T04:37:46Z",
+>>>>>>> 5dcc522 (Update personal website)
         "stars": 0,
         "url": "https://github.com/Shubh3005/Personal-Website"
       },
@@ -83,17 +97,29 @@
         "description": "",
         "name": "Personal-Website",
         "primary_language": "HTML",
+<<<<<<< HEAD
         "pushed_at": "2026-07-24T04:57:57Z",
+=======
+        "pushed_at": "2026-07-15T04:37:46Z",
+>>>>>>> 5dcc522 (Update personal website)
         "stars": 0,
         "url": "https://github.com/Shubh3005/Personal-Website"
       },
       {
         "description": "",
+<<<<<<< HEAD
         "name": "SkinIQ",
         "primary_language": "TypeScript",
         "pushed_at": "2026-07-23T22:21:06Z",
         "stars": 0,
         "url": "https://github.com/Shubh3005/SkinIQ"
+=======
+        "name": "codebook-compliance-thesis",
+        "primary_language": "Python",
+        "pushed_at": "2026-07-14T12:31:42Z",
+        "stars": 0,
+        "url": "https://github.com/Shubh3005/codebook-compliance-thesis"
+>>>>>>> 5dcc522 (Update personal website)
       },
       {
         "description": "My NeetCode.io problem submissions",
@@ -105,6 +131,7 @@
       },
       {
         "description": "",
+<<<<<<< HEAD
         "name": "codebook-compliance-thesis",
         "primary_language": "Python",
         "pushed_at": "2026-07-18T15:54:21Z",
@@ -113,6 +140,8 @@
       },
       {
         "description": "",
+=======
+>>>>>>> 5dcc522 (Update personal website)
         "name": "CodeBase",
         "primary_language": "Python",
         "pushed_at": "2026-06-27T22:07:35Z",
@@ -122,7 +151,11 @@
     ],
     "total_repos": 81
   },
+<<<<<<< HEAD
   "last_updated": "2026-07-25T04:53:41Z",
+=======
+  "last_updated": "2026-07-16T04:48:13Z",
+>>>>>>> 5dcc522 (Update personal website)
   "projects": {
     "ftc_analyzer": {
       "mAP": 0.949,
