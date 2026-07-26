@@ -7,15 +7,9 @@
       "status": "active"
     },
     {
-      "last_updated": "2026-07-24",
-      "one_liner": "Codebook Compliance Audit \u2014 LLM behavioral diagnostics thesis targeting AISI 2027. Completing December 2026 through Penn State Schreyer Honors College.",
-      "project_name": "Honors Thesis \u2014 Targeting AISI 2027",
-      "status": "active"
-    },
-    {
-      "last_updated": "2026-07-24",
-      "one_liner": "AI Innovation Fellow at Deloitte \u2014 building production AI systems and infrastructure.",
-      "project_name": "Deloitte AI Innovation Fellowship",
+      "last_updated": "2026-06-02",
+      "one_liner": "Studying model preference prediction and compliance scoring for responsible AI systems on PSU ICDS HPC.",
+      "project_name": "Thesis \u2014 XAI Alignment",
       "status": "active"
     },
     {
@@ -55,7 +49,7 @@
         "description": "",
         "name": "Personal-Website",
         "primary_language": "HTML",
-        "pushed_at": "2026-07-24T04:57:57Z",
+        "pushed_at": "2026-07-26T01:20:55Z",
         "stars": 0,
         "url": "https://github.com/Shubh3005/Personal-Website"
       },
@@ -89,7 +83,7 @@
         "description": "",
         "name": "Personal-Website",
         "primary_language": "HTML",
-        "pushed_at": "2026-07-24T04:57:57Z",
+        "pushed_at": "2026-07-26T01:20:55Z",
         "stars": 0,
         "url": "https://github.com/Shubh3005/Personal-Website"
       },
@@ -128,7 +122,7 @@
     ],
     "total_repos": 81
   },
-  "last_updated": "2026-07-25T04:53:41Z",
+  "last_updated": "2026-07-26T05:18:08Z",
   "projects": {
     "ftc_analyzer": {
       "mAP": 0.949,
