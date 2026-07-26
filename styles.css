@@ -3377,11 +3377,16 @@ nav.scrolled {
     /* Featured project mobile */
     .featured-project {
         padding: 1.25rem;
+        overflow: hidden;
     }
 
     .featured-content {
         padding: 0;
         text-align: center;
+    }
+
+    .featured-content .project-title {
+        font-size: 1.35rem;
     }
 
     .featured-content .tech-stack {
@@ -3402,6 +3407,20 @@ nav.scrolled {
     .featured-content .project-signal {
         display: block;
         text-align: center;
+    }
+
+    .featured-visual {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .featured-visual .code-window {
+        max-width: 100%;
+    }
+
+    .featured-visual .code-body pre {
+        overflow-x: auto;
+        white-space: pre;
     }
 
     .project-title {
